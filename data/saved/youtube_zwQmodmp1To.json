@@ -1,0 +1,3720 @@
+{
+  "id": "zwQmodmp1To",
+  "platform": "youtube",
+  "metadata": {
+    "id": "zwQmodmp1To",
+    "title": "10 New Github Repos to Make Money in 19 mins",
+    "channel": "Jack Roberts",
+    "duration_seconds": 1207,
+    "view_count": 67732,
+    "like_count": 1245,
+    "comment_count": 46,
+    "description": "⚡ How I Connect My AI Agents: https://bit.ly/3WlGNhZ\n📈 Grab Agentic OS + Full Course & Community: https://bit.ly/4kol0y5\n\n👋 Howdy\nHey, I'm Jack, I built and sold my last tech startup with a Gazillion customers, now I'm building AI startups and I share stuff that works. I quit my corporate job to do my start-up and have never looked back since.\n\n💬 Overview\nTen free GitHub repos worth installing this week, with every link below. PhotoCraft and Compositor are open-source versions of Photoshop, Premiere Pro and the rest of the Adobe suite, and Claude can edit inside them for you. Ego Lite is a browser for AI agents that runs in the background with your logged-in sessions. Rea shows how any app does something, then builds the same feature into your project. 21st.dev and its MCP give Claude a huge library of UI components. Find Skills picks the right skill for a task, Orca runs many agents side by side, and Zapier MCP gives every agent one shared set of connections. Arena Skill makes 100 answers face off until one wins, Universal Modder mods any game, and Cloudflare's security audit skill checks your app before you ship. SlopMonster closes it out. You'll see what each one does and how to get it running.\n\nLinks\n🎨 PhotoCraft: https://github.com/storytold/photocraft\n🎬 The full Craft suite: https://getartcraft.com/\n🧩 Compositor: https://github.com/robbietilton/Compositor\n🌐 Ego Lite: https://bit.ly/4B8sZYn\n🔍 Rea: https://github.com/morluto/rea\n✨ 21st.dev: https://bit.ly/4dC4Or8\n🧭 Find Skills: https://github.com/vercel-labs/skills\n🐋 Orca: https://github.com/stablyai/orca\n⚡ Zapier MCP: https://bit.ly/3WlGNhZ\n⚔️ Arena Skill: https://github.com/Jakeschincariol/arena-skill\n🎮 Universal Modder: https://github.com/rehan-remade/universal-modder\n🛡️ Cloudflare Security Audit Skill: https://github.com/cloudflare/security-audit-skill\n🧹 SlopMonster: https://github.com/ItsssssJack/SlopMonster\n🗣️ Glaido (FREE Month): https://get.glaido.com/jack\n💬 ChatGPT: https://chatgpt.com/\n🤖 Claude: https://claude.ai/\n\n⌚️ Stamps:\n0:00 - 10 GitHub Repos\n0:28 - Level 1: PhotoCraft\n4:18 - Level 2: Compositor\n5:28 - Level 3: Ego (lite)\n7:08 - Level 4: Rea\n7:52 - Level 5: 21st.dev\n11:49 - Level 6: Find Skills\n13:18 - Level 7: Orca\n14:24 - Bonus: Zapier MCP\n16:06 - Level 8: Arena Skill\n17:46 - Level 9: Universal Modder\n18:33 - Level 10: Cloudflare Security Audit\n19:20 - Bonus: SlopMonster\n19:56 - Do this next\n\nFree open-source GitHub repos for Claude and ChatGPT, from a free Photoshop and Premiere Pro alternative to an AI agent browser, UI component libraries, multi-agent tools and a security audit skill.\n\n#GitHub #OpenSource #Claude #ChatGPT #AITools #ClaudeCode",
+    "thumbnail": "https://i.ytimg.com/vi/zwQmodmp1To/maxresdefault.jpg",
+    "embed_url": "https://www.youtube.com/embed/zwQmodmp1To?autoplay=0",
+    "url": "https://www.youtube.com/watch?v=zwQmodmp1To"
+  },
+  "context_transcript": {
+    "available": true,
+    "full_text": "We've just had some of the biggest open-source drops that I have ever seen. Somebody open-sourced the entire Adobe Suite, Premiere Pro, [music] Photoshop, and way more. And in this video, I'm going to show you the top 10 that you need to download. And if you're new, I'm Jack. I built and sold my last tech startup with like a gazillion customers. Now, I'm building my own AI startup. And on this channel, I share the stuff that actually works. So, if you haven't already, grab that beautiful coffee, and let's dive straight in. So, on these 10 repos, the very first one I want to talk about is the fact that you now have free Photoshop that you can use inside Cloud. The last person I know that used Premiere Pro, Photoshop, all that sort of stuff, guys, you know, their wallet has still hasn't recovered. They're so broke, they can't even pay attention. But what's happened is something really interesting. And it's essentially called Photocraft, Lightcraft, Filmcraft. And essentially, it's a completely open-source version of everything in the Adobe Suite. It is actually crazy. So, this is Adobe Photoshop. You can go ahead, you can buy it. Photocraft, by contrast, looks completely different. We have Photocraft for Photoshop. We have Lightcraft, which replaces Lightroom. Filmcraft for Premiere Pro. Effectcraft, Vectorcraft, PDFcraft, Wordcraft. You name it, they literally have it. I'm going to put all the links down below so you can follow along. To install it, literally click that link and say, \"Hey there, I would like you to go ahead and install Photocraft for me and open it up on my computer.\" And effectively, guys, Cloud will go ahead and do that for you. And this is exactly what Photocraft looked like. And I'm telling you right now, guys, I had one of my buddies look at this, and this is an example of Filmcraft. He didn't know. I said, \"I'm going to pull up footage.\" He said, \"Dude, is this it?\" I said, \"This is Premiere Pro.\" It isn't Premiere Pro. This is actually their open-source version of it. And I played around with this, guys. The commands are exactly the same. You can copy it and do anything you want to. Copy and paste. All this sort of stuff is completely open-source. It is actually wild. You can drag things in. So, you don't need to pay for an expensive subscription to access this. And because it's open source, we have a lots of people working on it at the exact same time. Likewise, here is Photoscape plus open up a new document. As a first instance, guys, I've just dropped in my own community logo, and as someone has played around a little bit in Photoshop, it's cool. And you can see they've even nailed down the layers and every and what that physically looks like. You can add masks, you can do anything you could essentially do inside Photoshop. But the really cool thing is they're basically pro design apps. They're free, they're open, and your agent can actually run them, saving you some precious dollars. It's had 39,000 stars in 10 days, and videos are blowing up covering this. This, for example, right here is the Artcraft suite, which is very, very interesting. You can see we've got here all you're going to do, you can open a Photoscape with a Photoshop file, and you can ask Claude to go ahead and edit for you. For example, I can say, \"Hey there, I have an image in Photoscape. Could you do me a favor, and inside Photoscape, I want you to increase the size of that image and turn the background to a blue and yellow gradient.\" Why blue and yellow? Don't ask me too many questions. Right now, we're going to come down and give the permissions for the session, and it's really interesting. I personally found a lot of editing that I can do in from pro now. I honestly just let either Chat GPT or Claude do that for me. So, look, it's found the image, it's making magic happen. I can open up Photoscape. And what I think they've done a really good job of here, guys, is the UI and the packaging of this. It is genuinely really impressive. And we can see that beautiful Claude cursor. Now, I would always advise if you're doing any computer control, the pound-for-pound champion right now is actually inside Chat GPT, but of course, you can use anyone that you like. And as you can see, it's now in the background going ahead and adjusting the background color for us. It's selecting yellow and blue, which is great, and by the way, my hands are all the way up here, which is fantastic. You can see it's playing around with the different layers. And because I believe it's got a very similar structure to Photoshop, it will basically do the exact same thing. And so, you can see, you now have 12 paid apps all available to you. Effect craft, CAD craft. It's really remarkable. Essentially, whatever the specialist thing is you wanted to do, there's now an open-source alternative to use this. And you can find everything at this website with VectorCraft. It was all built in Rust, and you can see just exactly how they've gone ahead and built this. Live blends and layers. VectorCraft launches right there. You can download it for Mac, for Windows, whatever the thing is that you would like to go ahead and use. Basically taking all your designs to a completely new level. And this is just number one. We've got a few more to go into that are going to blow your mind. Now, the second one here builds on that initially, and it's called Compositor. Now, the second repo itself essentially has code right in the layers, and you can actually see that picture change. It's really leading into code as a designer. And so, essentially, guys, two people have rebuilt Photoshop this month. We are now officially in the era where these 100% free repos that can reconstruct any single technology. That's how important these things are. Now, this had again over 2 million views on X just on its launch post, and you can see everything you can do. Look at some of the things that's been built with it. This was built using the software. As was this. As was this. Again, this is a really cool, powerful software. You can download it on the free repo. I'm going to put a link down below again so you can just copy all the different tools I'm using in this video. Now, what does it look like? If you come down to the bottom right, it will look like this beautiful gradient. When you open it up, it will look exactly like this. I'd say the UI might even be a little bit better, to be honest, if I compare this with PhotoCraft. You can see over here. If you come back over here, for example, you can see the difference. This one looks a little bit more gray. Um this one here, I guess like the color scheme on this, the buttons are a little bit larger. So, the UI is fantastic. Both are functionally superb, so you can use either one that you like. This takes us on to number three, which effectively is a browser built for AI agents. And this one is called Ego Light. I haven't seen this one discussed a ton, but it's doing very well on GitHub. Let me explain exactly what it is and how this goes ahead and works. So, effectively, what it does is it gives the AI agent the ability to go ahead and browse the internet. And crucially, it can do this without taking control of your screen, which is really important and it's completely free to go ahead and grab at light.ego.app. Now, let's go through and explain what this does. You can see this working in the background here. Effectively, it goes ahead and allows the agent to go and do many different things. As you can see now, you give it a query on the left-hand side to ego browser to go and script the main posts from the X account, which is given over here, excluding pin posts, reposts, and posts labeled and you can see it's now essentially browsing the web, having a look, and then making intelligent decisions that it can do specifically on that webpage. But on my left-hand side, it basically brings all that information down there. You could ask it to do things like, \"Hey, go ahead uh by basically clicking on the ego browser plugin to go ahead and script the main posts or go and check out anything your competitors are doing.\" And again, you just go ahead and grab this straight from the GitHub. Now, the big problem that ego light is solving here is that most AIs themselves, when you use them, will either take control of the computer so you can't do anything else, or they'll have to use their own browsers, but those aren't necessarily signed into all the stuff that you're currently using. So, with ego light, you can use many different searches at the same time. And then with this, each individual ego light thing itself is in its own tab. You can use as many as you want to. And on top of that, you can effectively bring any model that you want to while it's using it, giving it a deserved spot on this top 10 list. Now, we're taking over now to level four, which is called rear, which essentially lets you ask how any app does something. What do I mean by that? Well, this one is a really, really interesting one. So, let's just say that you have an app that you want to reimagine or you want to improve, but you don't understand how it works when you look at the UI and the logic and the data. With rear, we can effectively go ahead and solve what that actually looks like. Again, completely free repo, 65,000 stars. This one is growing, is very powerful. Is actually the fastest growing repo on GitHub this very week, and it is blowing up for good reason. Now, in terms of how you actually go ahead and use this, it's pretty straightforward. You set it up with one command. You can ask how does search work in this note app. It shows the evidence, then can build the same feature into any project that you have. On level five, really enhances design and takes it to a completely new level. This is something called 21st.dev. Um this can integrate with either Claude or ChatGPT or any model that you effectively like. Now, what it is really is a component library. Think of it as a Willy Wonka's Emporium essentially for any kind of design component that you want. It is a living, breathing interface. You can effectively do anything you want to. You can look at community components. You can look at anything else. In fact, I even built it here when I was redoing my entire UI. So, for example, this is Glider, my speech-to-text startup. I redesigned my UI and I used a lot of 21st.dev directly inside Claude code to do this. You can even see Look at this hover animation, guys. You can see this? This is directly from 21st.dev. So, when you land on 21st.dev, this shows an example. You can see what's trending top today in the world. Look at this. This right now is something that you can add into anything you want to. Say you've got images and you want to give an Apple-esque style. We can do that. This one's really cool. This is pretty freaking crazy. I can copy this prompt like so, then head over to Claude, and I could say, \"Hey, go ahead for me and build me this in an app on my own laptop, please. Make it as beautiful as possible, all right?\" I can come down then and drop that in. Now, here's the thing there, guys. Maybe we don't actually want to go ahead and spend our time browsing through everything. This is where it's really cool cuz what we can actually do with the 21st.dev MCP is give Claude access to this huge Alexandria's library of components, which means that I don't need to search anymore. So, whether or not Claude wants to go ahead and grab footers or navbars or featuring features or pricing, Claude can just dynamically grab the best UI assets to build anything that I want to. And it's super easy to set up. And for example, the bottom here, I'll just come down and say, \"Then I'd like it to go ahead and connect to the 21st.dev MCP.\" And let me know any instructions that you want, and go ahead and grab for me a beautiful photo from that page to integrate onto the website and also a beautiful interactive header at the top that has all the different sections of the website. And once you can do that, you're going to send that one off. Now, even if I come back over here to Glido for example to show you what I built using this, again cuz I talk about the stuff that I'm using here, I can click on that and just look at this guys. And I did use some Claude motion graphics to really elevate it. So, one of the features that we're using on Glido right now is the ability to summarize any webpage here. How do we show that in a beautiful way? I might for example come down and say, \"Hey, what is this webpage about?\" And I can use Glido to do that. So, the question for me was, \"How do I go ahead and actually share that?\" And there you go, you can see this page is an onboarding page for Glido. I can get to summarize videos. I can do loads of other stuff. But what this really takes it to the level is, again, look at the components you can just go and grab from this libraries. And you can obviously design anything guys, but realistically, you don't always necessarily have to. Go and find the best design principles that exist and leverage them by connecting them together. Now, obviously, you can run these codes in your terminal to connect 21st.dev or any of the other apps. But the reality is, you can just literally now at a stage where you can yap to Claude and it will go ahead and do that for you. And to connect 21st.dev to your CLI to Claude, you can literally on the left-hand side of the menu guys, click on CLI and MCP, pick your particular browser, and literally you're just going to come down and copy this and run it in my terminal. And you can do that very easily by coming into Claude, clicking on this little terminal here, and controlling V. And then guys, we have this exact thing. Now, bear in mind, this is all taken from 21st.dev. I mean, look at this guys. This is ridiculous. I mean, I'm going to come down and see the actual main thing I wanted. As you can see, I've got this guy here, which is fantastic. I can check out the tower height. I can move it into many different things. Move that around, do what I want to do. I can refresh that. Oh my goodness. This actually, weirdly enough, is from I think they have the same thing on school, which is really interesting. And again, we can see that beautiful transition. Come up here. We can pick the palette. All these different I mean, this is absolutely gorgeous guys. This is ridiculous. Again, six moods one city over different data that we grabbed. And bear in mind you can now just tell Claude or Codex, whatever, go ahead and grab it. And what I love about this, look at this thing the top guys. You can see how that moves from left to right. How freaking sick is that? Anyway, I'm getting very nerdy about this, but you get the idea. Then after this one, we go on now to level six, which is the skill that finds new skills. This one is pretty outrageous. Say for example, you say to chat GPT or Claude, I need a skill to create beautiful PowerPoint presentations or I need to make slides. What this actually does is goes and finds the best skill for you to actually use. It's called the cell labs and its skills. Little side tip by the way, never ever ever install any skill without running it through chat GPT and Claude first. There's so many great actors out there, but there are also some not so great actors. So, it's always good just to get it to run through and understand what's in the repo before you put it on your own personal machine to make sure that you are crushing it. And by the way guys, the thing about this skill, which I think is super duper interesting, is the fact that it is everywhere right now. It is the top skill right now on skills.sh. It is the most popular skill. It's the skill to find new skills. And if this all sounds like I'm speaking design Spanish, I'm going to put a link down below for my full Claude code masterclass. I'll take you from beginner to hero and include stuff that I have never shared on YouTube. And you also get immediate access to my agentic operating system that I put so many hours into. It has everything from my entire unique memory systems that connect to everything from Grokbot to dots to Claude to Codex in one gigantic beautiful system. Also has my entire design agentic operating system and a gazillion other things. You get this immediately. I'll put a link down below so you can grab that. Level up. I meet other like-minded people that are going to give you a completely unfair advantage. So, grab that before your competitors do for sure. Now, number seven level seven here is essentially idea of what we call Orca, which is one person and many agents. This one here is a very interesting repo and I'll open it up right now so you can see what it looks like. As you can see this one's about 89,000 stars. You can see what it works and exactly how to go ahead and use it. And the idea with this is that you can run multiple agents side by side running one task. And you basically hand out the jobs and every agent works simultaneously for you at the same and then each one of those agents will go ahead and finish his job independently. Um it's literally almost 90,000 stars. Most of them have actually happened this month and it's growing pretty quickly to be fair. To install it just grab out your URL, give it a clone and then you just give each agent you want its own individual task and this is the exact UI that you're going to see once you go ahead and download it. And once it's happened you can actually go ahead and review all that individual work side by side. And this is the UI that you're going to see and as you can see they've got a really cool nice crisp interface. On the left hand side you can see what you've got pinned here, all the tasks here that are in progress. And obviously you've got this as well which is fantastic oversight in terms of really just using multiple different agents at the same time which is really handy. And then I want to talk about a bonus integration called Zapier. Funnily enough my very first tech startup I actually initially built on Zapier and I did that years ago before it was cool on internet. Now one of the reasons I really want to touch on Zapier here is because we are increasingly now getting to the level, okay, where we're using multiple different agents. If I click on agents my agents go out. I've got Grokbot, I've got Hermes, I've got Dots, I've got all the systems here coming by and together. I have my dashboard, I have ChatGPT, I have Claude and they all individually have their own unique configurations and connections, right? They need access to your Google Mail, they need access to your calendar, your Slack, your bank details, whatever the specific thing is. One of my favorite things about Zapier MCP is you can actually have Think of it as your connection lender. Essentially it's almost like a universal key where you connect your stuff to Zapier whether it's Airtable or Canva or School and it has integrations that you don't have access to actually outside of it. Like School for example, you need Zapier to run those things like invite people to the community. So So, I'm on my community for example and I want to invite somebody, um I can actually just go ahead and use Zapier to do that, right? Very, very, very cool. Now, one cool thing is once you set this up, and you can configure the individual permissions, like what do I want to give it the ability to do on my Gmail for example, I might say, \"Hey, it can send an email. No, it can't.\" And you configure this basically this connections once, and you can use it anywhere. I'll put a link down below. It's unbelievably easy to set up, and once you all you do then is basically connect Zapier to any one of those agents, and then you can use that exact list, those exact connections for everything that you're doing. Um it is pretty freaking exceptional doing that, and it just saves you a ton of time, and does unlock new connections that you're not getting in other places. If you can imagine it, you can probably find a connection there as well. Now, with that in mind, let's talk about level eight. Now, this one is called the Arena skill. If you've ever played Fortnite, which let's be fair, many of us have, where you drop 100 people on a map, and they all battle out to find the one champion. Arena is very interesting, so what Arena does, it has 100 claws fight, okay? This is called the Arena skill. It's pretty powerful. I'll link down here below. It's a quite new skill, but it's very, very interesting, and it's a very unique way of actually finding what is the best answer to a question. Now, what's really interesting is they face off and they have a winner. So, if you imagine like in a bracket style, where you have these 100 different questions, 100 different answers, that effectively you look at answer A and B together, okay? And the best answer goes to the next stage, and so and so and so forth until you get to the final answer. And funnily enough, at the end, you can see basically what did that have to do to win, and it shows you why it's the best. So, for example, this one here won, and it shows you each of the individual answers it superseded. So, basically the idea is if you ask an AI the same question twice, you'll get two different answers. So, if we ask it 100 times, what if you could actually ask it 100 times and get the best answer? That's essentially the question this repo is saving you. Um it is blowing up all over Instagram. I haven't seen barely anybody talk about it on YouTube, but it is a really powerful and interesting way to get a fantastic answer. And to use it, all you're going to do is literally grab this guys, throw it in, chat to Claude and say, \"I want to use the arena skill. Um, use the arena skill to answer this question.\" And it'll go ahead and do that for you. The TLDR is 100 answer and only one can live. Only one can physically win. So, do that for some of your more interesting and challenging questions and see exactly how that performance goes. Now, number nine is a really fascinating one. Level nine is a plugin called Basically, it's a universal modder by a guy called Rohan Remade, which is cool. This one again is a early stage. Again, I'm showing you what is trending early before it becomes mainstream as well as some of the biggest ones here. And it lets you mod any game. You may have seen these blow up online essentially. It's pretty cool and pretty interesting. And honestly, I'd say it's quite a fun one to play around with, which I think is a great spot that, right? Because you can basically mod anything that you physically want to. So, again, there's already been a lot of interesting sort of like hype on this to some extent. The myth doesn't take a million lines to explain what this does. Essentially, give it a game and it will create a mod. And what it essentially should do is be super creative. Remember, we're entering now a brand new era in software where we can deconstruct anything and we can effectively build anything, which takes us on to level 10. Now, level 10 essentially is something really powerful. It's Cloudflare's security audit skill. Now, security, guys, is that boring topic no one wants to think about. Thankfully, there is a skill here which is cool. A coding agent skill that turns your agent into a security audit tool. It orchestrates isolated agents through reconnaissance, coverage and hunting, candidate validation, structured output, and independent record verification. I'm also going to show you a bonus skill in 2 seconds, which you're really going to make sure that you need to use that, okay? Now, it's very, very cool. You can run it before you ship a client's app, anything production ready that leaves. Run it through this skill before you go ahead and do that. And again, what it does, it runs reconnaissance, coverage and candidate evaluations, structured output, independent record validation, and target neutral reporting. You can see all of the bells and whistles it does down that. Now, the last one that I want to talk to you about is something called SlotMonster. I mentioned it on my last video, but it is so effective, I have to mention it. Not only will it take any text that you've got and make it sound like it's been written by a human, it's also trained on basically marketing and sales practices that actually convert. I use these examples a lot, but I cannot underscore just enough how powerful this is. Look at what it did. So, instead of saying \"trusted, reliable, and built to last\", that becomes \"six nails per shingle, every shingle. We leverage industry-leading materials to deliver unparalleled protection.\" We source materials from manufacturers who test for wind, hail, and sun. And that's how do you use these skills to build something super productive that's going to save you time and make you more money? Well, I'll show you how to do that in an Agentic Operating System in this video right here.",
+    "segments": [
+      {
+        "text": "We've just had some of the biggest",
+        "start": 0,
+        "duration": 3.76
+      },
+      {
+        "text": "open-source drops that I have ever seen.",
+        "start": 1.52,
+        "duration": 4.64
+      },
+      {
+        "text": "Somebody open-sourced the entire Adobe",
+        "start": 3.76,
+        "duration": 4.92
+      },
+      {
+        "text": "Suite, Premiere Pro, [music] Photoshop,",
+        "start": 6.16,
+        "duration": 4.36
+      },
+      {
+        "text": "and way more. And in this video, I'm",
+        "start": 8.68,
+        "duration": 3.48
+      },
+      {
+        "text": "going to show you the top 10 that you",
+        "start": 10.52,
+        "duration": 3.76
+      },
+      {
+        "text": "need to download. And if you're new, I'm",
+        "start": 12.16,
+        "duration": 3.6
+      },
+      {
+        "text": "Jack. I built and sold my last tech",
+        "start": 14.28,
+        "duration": 3.64
+      },
+      {
+        "text": "startup with like a gazillion customers.",
+        "start": 15.76,
+        "duration": 4.44
+      },
+      {
+        "text": "Now, I'm building my own AI startup. And",
+        "start": 17.92,
+        "duration": 4.36
+      },
+      {
+        "text": "on this channel, I share the stuff that",
+        "start": 20.2,
+        "duration": 3.6
+      },
+      {
+        "text": "actually works. So, if you haven't",
+        "start": 22.28,
+        "duration": 3.72
+      },
+      {
+        "text": "already, grab that beautiful coffee, and",
+        "start": 23.8,
+        "duration": 4.24
+      },
+      {
+        "text": "let's dive straight in. So, on these 10",
+        "start": 26,
+        "duration": 3.48
+      },
+      {
+        "text": "repos, the very first one I want to talk",
+        "start": 28.04,
+        "duration": 4.2
+      },
+      {
+        "text": "about is the fact that you now have free",
+        "start": 29.48,
+        "duration": 5.6
+      },
+      {
+        "text": "Photoshop that you can use inside Cloud.",
+        "start": 32.24,
+        "duration": 4.64
+      },
+      {
+        "text": "The last person I know that used",
+        "start": 35.08,
+        "duration": 3.96
+      },
+      {
+        "text": "Premiere Pro, Photoshop, all that sort",
+        "start": 36.88,
+        "duration": 3.76
+      },
+      {
+        "text": "of stuff, guys, you know, their wallet",
+        "start": 39.04,
+        "duration": 3.28
+      },
+      {
+        "text": "has still hasn't recovered. They're so",
+        "start": 40.64,
+        "duration": 3.8
+      },
+      {
+        "text": "broke, they can't even pay attention.",
+        "start": 42.32,
+        "duration": 3.4
+      },
+      {
+        "text": "But what's happened is something really",
+        "start": 44.44,
+        "duration": 3.52
+      },
+      {
+        "text": "interesting. And it's essentially called",
+        "start": 45.72,
+        "duration": 4.72
+      },
+      {
+        "text": "Photocraft, Lightcraft, Filmcraft. And",
+        "start": 47.96,
+        "duration": 4.56
+      },
+      {
+        "text": "essentially, it's a completely",
+        "start": 50.44,
+        "duration": 4.64
+      },
+      {
+        "text": "open-source version of everything in the",
+        "start": 52.52,
+        "duration": 5.32
+      },
+      {
+        "text": "Adobe Suite. It is actually crazy. So,",
+        "start": 55.08,
+        "duration": 4.04
+      },
+      {
+        "text": "this is Adobe Photoshop. You can go",
+        "start": 57.84,
+        "duration": 3.24
+      },
+      {
+        "text": "ahead, you can buy it. Photocraft, by",
+        "start": 59.12,
+        "duration": 3.8
+      },
+      {
+        "text": "contrast, looks completely different. We",
+        "start": 61.08,
+        "duration": 4.159
+      },
+      {
+        "text": "have Photocraft for Photoshop. We have",
+        "start": 62.92,
+        "duration": 4.36
+      },
+      {
+        "text": "Lightcraft, which replaces Lightroom.",
+        "start": 65.239,
+        "duration": 4.521
+      },
+      {
+        "text": "Filmcraft for Premiere Pro. Effectcraft,",
+        "start": 67.28,
+        "duration": 5.32
+      },
+      {
+        "text": "Vectorcraft, PDFcraft, Wordcraft. You",
+        "start": 69.76,
+        "duration": 5.08
+      },
+      {
+        "text": "name it, they literally have it. I'm",
+        "start": 72.6,
+        "duration": 3.68
+      },
+      {
+        "text": "going to put all the links down below so",
+        "start": 74.84,
+        "duration": 2.96
+      },
+      {
+        "text": "you can follow along. To install it,",
+        "start": 76.28,
+        "duration": 3.4
+      },
+      {
+        "text": "literally click that link and say, \"Hey",
+        "start": 77.8,
+        "duration": 3.44
+      },
+      {
+        "text": "there, I would like you to go ahead and",
+        "start": 79.68,
+        "duration": 4.56
+      },
+      {
+        "text": "install Photocraft for me and open it up",
+        "start": 81.24,
+        "duration": 5.08
+      },
+      {
+        "text": "on my computer.\" And effectively, guys,",
+        "start": 84.24,
+        "duration": 3.8
+      },
+      {
+        "text": "Cloud will go ahead and do that for you.",
+        "start": 86.32,
+        "duration": 3.96
+      },
+      {
+        "text": "And this is exactly what Photocraft",
+        "start": 88.04,
+        "duration": 3.36
+      },
+      {
+        "text": "looked like. And I'm telling you right",
+        "start": 90.28,
+        "duration": 2.64
+      },
+      {
+        "text": "now, guys, I had one of my buddies look",
+        "start": 91.4,
+        "duration": 2.8
+      },
+      {
+        "text": "at this, and this is an example of",
+        "start": 92.92,
+        "duration": 3.68
+      },
+      {
+        "text": "Filmcraft. He didn't know. I said, \"I'm",
+        "start": 94.2,
+        "duration": 3.56
+      },
+      {
+        "text": "going to pull up footage.\" He said,",
+        "start": 96.6,
+        "duration": 2.68
+      },
+      {
+        "text": "\"Dude, is this it?\" I said, \"This is",
+        "start": 97.76,
+        "duration": 3.88
+      },
+      {
+        "text": "Premiere Pro.\" It isn't Premiere Pro.",
+        "start": 99.28,
+        "duration": 4
+      },
+      {
+        "text": "This is actually their open-source",
+        "start": 101.64,
+        "duration": 3.12
+      },
+      {
+        "text": "version of it. And I played around with",
+        "start": 103.28,
+        "duration": 3.84
+      },
+      {
+        "text": "this, guys. The commands are exactly the",
+        "start": 104.76,
+        "duration": 4.16
+      },
+      {
+        "text": "same. You can copy it and do anything",
+        "start": 107.12,
+        "duration": 3.72
+      },
+      {
+        "text": "you want to. Copy and paste. All this",
+        "start": 108.92,
+        "duration": 4.92
+      },
+      {
+        "text": "sort of stuff is completely open-source.",
+        "start": 110.84,
+        "duration": 5.08
+      },
+      {
+        "text": "It is actually wild. You can drag things",
+        "start": 113.84,
+        "duration": 3.8
+      },
+      {
+        "text": "in. So, you don't need to pay for an",
+        "start": 115.92,
+        "duration": 4.32
+      },
+      {
+        "text": "expensive subscription to access this.",
+        "start": 117.64,
+        "duration": 3.92
+      },
+      {
+        "text": "And because it's open source, we have a",
+        "start": 120.24,
+        "duration": 2.84
+      },
+      {
+        "text": "lots of people working on it at the",
+        "start": 121.56,
+        "duration": 3.32
+      },
+      {
+        "text": "exact same time. Likewise, here is",
+        "start": 123.08,
+        "duration": 3.68
+      },
+      {
+        "text": "Photoscape plus open up a new document.",
+        "start": 124.88,
+        "duration": 3.08
+      },
+      {
+        "text": "As a first instance, guys, I've just",
+        "start": 126.76,
+        "duration": 2.84
+      },
+      {
+        "text": "dropped in my own community logo, and as",
+        "start": 127.96,
+        "duration": 2.64
+      },
+      {
+        "text": "someone has played around a little bit",
+        "start": 129.6,
+        "duration": 2.64
+      },
+      {
+        "text": "in Photoshop, it's cool. And you can see",
+        "start": 130.6,
+        "duration": 3.56
+      },
+      {
+        "text": "they've even nailed down the layers and",
+        "start": 132.24,
+        "duration": 3.16
+      },
+      {
+        "text": "every and what that physically looks",
+        "start": 134.16,
+        "duration": 2.96
+      },
+      {
+        "text": "like. You can add masks, you can do",
+        "start": 135.4,
+        "duration": 4.12
+      },
+      {
+        "text": "anything you could essentially do inside",
+        "start": 137.12,
+        "duration": 3.8
+      },
+      {
+        "text": "Photoshop. But the really cool thing is",
+        "start": 139.52,
+        "duration": 3
+      },
+      {
+        "text": "they're basically pro design apps.",
+        "start": 140.92,
+        "duration": 3.039
+      },
+      {
+        "text": "They're free, they're open, and your",
+        "start": 142.52,
+        "duration": 4.12
+      },
+      {
+        "text": "agent can actually run them, saving you",
+        "start": 143.959,
+        "duration": 4.601
+      },
+      {
+        "text": "some precious dollars. It's had 39,000",
+        "start": 146.64,
+        "duration": 4.8
+      },
+      {
+        "text": "stars in 10 days, and videos are blowing",
+        "start": 148.56,
+        "duration": 4.6
+      },
+      {
+        "text": "up covering this. This, for example,",
+        "start": 151.44,
+        "duration": 3.64
+      },
+      {
+        "text": "right here is the Artcraft suite, which",
+        "start": 153.16,
+        "duration": 3.32
+      },
+      {
+        "text": "is very, very interesting. You can see",
+        "start": 155.08,
+        "duration": 2.76
+      },
+      {
+        "text": "we've got here all you're going to do,",
+        "start": 156.48,
+        "duration": 3.16
+      },
+      {
+        "text": "you can open a Photoscape with a",
+        "start": 157.84,
+        "duration": 4.4
+      },
+      {
+        "text": "Photoshop file, and you can ask Claude",
+        "start": 159.64,
+        "duration": 4.48
+      },
+      {
+        "text": "to go ahead and edit for you. For",
+        "start": 162.24,
+        "duration": 3.76
+      },
+      {
+        "text": "example, I can say, \"Hey there, I have",
+        "start": 164.12,
+        "duration": 3.52
+      },
+      {
+        "text": "an image in Photoscape. Could you do me",
+        "start": 166,
+        "duration": 3.88
+      },
+      {
+        "text": "a favor, and inside Photoscape, I want",
+        "start": 167.64,
+        "duration": 4.28
+      },
+      {
+        "text": "you to increase the size of that image",
+        "start": 169.88,
+        "duration": 5.36
+      },
+      {
+        "text": "and turn the background to a blue and",
+        "start": 171.92,
+        "duration": 6
+      },
+      {
+        "text": "yellow gradient.\" Why blue and yellow?",
+        "start": 175.24,
+        "duration": 4.6
+      },
+      {
+        "text": "Don't ask me too many questions. Right",
+        "start": 177.92,
+        "duration": 2.92
+      },
+      {
+        "text": "now, we're going to come down and give",
+        "start": 179.84,
+        "duration": 2.28
+      },
+      {
+        "text": "the permissions for the session, and",
+        "start": 180.84,
+        "duration": 2.72
+      },
+      {
+        "text": "it's really interesting. I personally",
+        "start": 182.12,
+        "duration": 2.96
+      },
+      {
+        "text": "found a lot of editing that I can do in",
+        "start": 183.56,
+        "duration": 4.399
+      },
+      {
+        "text": "from pro now. I honestly just let either",
+        "start": 185.08,
+        "duration": 5.2
+      },
+      {
+        "text": "Chat GPT or Claude do that for me. So,",
+        "start": 187.959,
+        "duration": 4.081
+      },
+      {
+        "text": "look, it's found the image, it's making",
+        "start": 190.28,
+        "duration": 3.959
+      },
+      {
+        "text": "magic happen. I can open up Photoscape.",
+        "start": 192.04,
+        "duration": 3.6
+      },
+      {
+        "text": "And what I think they've done a really",
+        "start": 194.239,
+        "duration": 4.401
+      },
+      {
+        "text": "good job of here, guys, is the UI and",
+        "start": 195.64,
+        "duration": 4.84
+      },
+      {
+        "text": "the packaging of this. It is genuinely",
+        "start": 198.64,
+        "duration": 3.4
+      },
+      {
+        "text": "really impressive. And we can see that",
+        "start": 200.48,
+        "duration": 3.039
+      },
+      {
+        "text": "beautiful Claude cursor. Now, I would",
+        "start": 202.04,
+        "duration": 2.88
+      },
+      {
+        "text": "always advise if you're doing any",
+        "start": 203.519,
+        "duration": 3.361
+      },
+      {
+        "text": "computer control, the pound-for-pound",
+        "start": 204.92,
+        "duration": 4.2
+      },
+      {
+        "text": "champion right now is actually inside",
+        "start": 206.88,
+        "duration": 3.8
+      },
+      {
+        "text": "Chat GPT, but of course, you can use",
+        "start": 209.12,
+        "duration": 2.88
+      },
+      {
+        "text": "anyone that you like. And as you can",
+        "start": 210.68,
+        "duration": 2.8
+      },
+      {
+        "text": "see, it's now in the background going",
+        "start": 212,
+        "duration": 3.56
+      },
+      {
+        "text": "ahead and adjusting the background color",
+        "start": 213.48,
+        "duration": 3.72
+      },
+      {
+        "text": "for us. It's selecting yellow and blue,",
+        "start": 215.56,
+        "duration": 3.399
+      },
+      {
+        "text": "which is great, and by the way, my hands",
+        "start": 217.2,
+        "duration": 2.92
+      },
+      {
+        "text": "are all the way up here, which is",
+        "start": 218.959,
+        "duration": 2.681
+      },
+      {
+        "text": "fantastic. You can see it's playing",
+        "start": 220.12,
+        "duration": 3.24
+      },
+      {
+        "text": "around with the different layers. And",
+        "start": 221.64,
+        "duration": 2.96
+      },
+      {
+        "text": "because I believe it's got a very",
+        "start": 223.36,
+        "duration": 2.879
+      },
+      {
+        "text": "similar structure to Photoshop, it will",
+        "start": 224.6,
+        "duration": 3.12
+      },
+      {
+        "text": "basically do the exact same thing. And",
+        "start": 226.239,
+        "duration": 3.321
+      },
+      {
+        "text": "so, you can see, you now have 12 paid",
+        "start": 227.72,
+        "duration": 3.92
+      },
+      {
+        "text": "apps all available to you. Effect craft,",
+        "start": 229.56,
+        "duration": 4.2
+      },
+      {
+        "text": "CAD craft. It's really remarkable.",
+        "start": 231.64,
+        "duration": 3.64
+      },
+      {
+        "text": "Essentially, whatever the specialist",
+        "start": 233.76,
+        "duration": 2.96
+      },
+      {
+        "text": "thing is you wanted to do, there's now",
+        "start": 235.28,
+        "duration": 3.48
+      },
+      {
+        "text": "an open-source alternative to use this.",
+        "start": 236.72,
+        "duration": 3.44
+      },
+      {
+        "text": "And you can find everything at this",
+        "start": 238.76,
+        "duration": 2.88
+      },
+      {
+        "text": "website with VectorCraft. It was all",
+        "start": 240.16,
+        "duration": 2.72
+      },
+      {
+        "text": "built in Rust, and you can see just",
+        "start": 241.64,
+        "duration": 3.24
+      },
+      {
+        "text": "exactly how they've gone ahead and built",
+        "start": 242.88,
+        "duration": 3.84
+      },
+      {
+        "text": "this. Live blends and layers.",
+        "start": 244.88,
+        "duration": 3.28
+      },
+      {
+        "text": "VectorCraft launches right there. You",
+        "start": 246.72,
+        "duration": 3.04
+      },
+      {
+        "text": "can download it for Mac, for Windows,",
+        "start": 248.16,
+        "duration": 2.6
+      },
+      {
+        "text": "whatever the thing is that you would",
+        "start": 249.76,
+        "duration": 2.76
+      },
+      {
+        "text": "like to go ahead and use. Basically",
+        "start": 250.76,
+        "duration": 3.199
+      },
+      {
+        "text": "taking all your designs to a completely",
+        "start": 252.52,
+        "duration": 3.28
+      },
+      {
+        "text": "new level. And this is just number one.",
+        "start": 253.959,
+        "duration": 3.241
+      },
+      {
+        "text": "We've got a few more to go into that are",
+        "start": 255.8,
+        "duration": 2.68
+      },
+      {
+        "text": "going to blow your mind. Now, the second",
+        "start": 257.2,
+        "duration": 3.64
+      },
+      {
+        "text": "one here builds on that initially, and",
+        "start": 258.48,
+        "duration": 3.92
+      },
+      {
+        "text": "it's called Compositor. Now, the second",
+        "start": 260.84,
+        "duration": 3.88
+      },
+      {
+        "text": "repo itself essentially has code right",
+        "start": 262.4,
+        "duration": 4.24
+      },
+      {
+        "text": "in the layers, and you can actually see",
+        "start": 264.72,
+        "duration": 3.96
+      },
+      {
+        "text": "that picture change. It's really leading",
+        "start": 266.64,
+        "duration": 4.04
+      },
+      {
+        "text": "into code as a designer. And so,",
+        "start": 268.68,
+        "duration": 3.48
+      },
+      {
+        "text": "essentially, guys, two people have",
+        "start": 270.68,
+        "duration": 3.32
+      },
+      {
+        "text": "rebuilt Photoshop this month. We are now",
+        "start": 272.16,
+        "duration": 4.64
+      },
+      {
+        "text": "officially in the era where these 100%",
+        "start": 274,
+        "duration": 5
+      },
+      {
+        "text": "free repos that can reconstruct any",
+        "start": 276.8,
+        "duration": 4.08
+      },
+      {
+        "text": "single technology. That's how important",
+        "start": 279,
+        "duration": 3.76
+      },
+      {
+        "text": "these things are. Now, this had again",
+        "start": 280.88,
+        "duration": 4.2
+      },
+      {
+        "text": "over 2 million views on X just on its",
+        "start": 282.76,
+        "duration": 4.36
+      },
+      {
+        "text": "launch post, and you can see everything",
+        "start": 285.08,
+        "duration": 3.48
+      },
+      {
+        "text": "you can do. Look at some of the things",
+        "start": 287.12,
+        "duration": 2.36
+      },
+      {
+        "text": "that's been built with it. This was",
+        "start": 288.56,
+        "duration": 3.359
+      },
+      {
+        "text": "built using the software. As was this.",
+        "start": 289.48,
+        "duration": 4.76
+      },
+      {
+        "text": "As was this. Again, this is a really",
+        "start": 291.919,
+        "duration": 3.601
+      },
+      {
+        "text": "cool, powerful software. You can",
+        "start": 294.24,
+        "duration": 2.88
+      },
+      {
+        "text": "download it on the free repo. I'm going",
+        "start": 295.52,
+        "duration": 2.96
+      },
+      {
+        "text": "to put a link down below again so you",
+        "start": 297.12,
+        "duration": 2.72
+      },
+      {
+        "text": "can just copy all the different tools",
+        "start": 298.48,
+        "duration": 2.72
+      },
+      {
+        "text": "I'm using in this video. Now, what does",
+        "start": 299.84,
+        "duration": 2.56
+      },
+      {
+        "text": "it look like? If you come down to the",
+        "start": 301.2,
+        "duration": 2.8
+      },
+      {
+        "text": "bottom right, it will look like this",
+        "start": 302.4,
+        "duration": 4.12
+      },
+      {
+        "text": "beautiful gradient. When you open it up,",
+        "start": 304,
+        "duration": 5.28
+      },
+      {
+        "text": "it will look exactly like this. I'd say",
+        "start": 306.52,
+        "duration": 5.28
+      },
+      {
+        "text": "the UI might even be a little bit",
+        "start": 309.28,
+        "duration": 4.04
+      },
+      {
+        "text": "better, to be honest, if I compare this",
+        "start": 311.8,
+        "duration": 3.72
+      },
+      {
+        "text": "with PhotoCraft. You can see over here.",
+        "start": 313.32,
+        "duration": 3.64
+      },
+      {
+        "text": "If you come back over here, for example,",
+        "start": 315.52,
+        "duration": 2.6
+      },
+      {
+        "text": "you can see the difference. This one",
+        "start": 316.96,
+        "duration": 2.72
+      },
+      {
+        "text": "looks a little bit more gray.",
+        "start": 318.12,
+        "duration": 3.6
+      },
+      {
+        "text": "Um this one here, I guess like the color",
+        "start": 319.68,
+        "duration": 3.52
+      },
+      {
+        "text": "scheme on this, the buttons are a little",
+        "start": 321.72,
+        "duration": 3.64
+      },
+      {
+        "text": "bit larger. So, the UI is fantastic.",
+        "start": 323.2,
+        "duration": 3.76
+      },
+      {
+        "text": "Both are functionally superb, so you can",
+        "start": 325.36,
+        "duration": 3.12
+      },
+      {
+        "text": "use either one that you like. This takes",
+        "start": 326.96,
+        "duration": 3.76
+      },
+      {
+        "text": "us on to number three, which effectively",
+        "start": 328.48,
+        "duration": 5.8
+      },
+      {
+        "text": "is a browser built for AI agents. And",
+        "start": 330.72,
+        "duration": 5.72
+      },
+      {
+        "text": "this one is called Ego Light. I haven't",
+        "start": 334.28,
+        "duration": 4.68
+      },
+      {
+        "text": "seen this one discussed a ton, but it's",
+        "start": 336.44,
+        "duration": 4.24
+      },
+      {
+        "text": "doing very well on GitHub. Let me",
+        "start": 338.96,
+        "duration": 3.16
+      },
+      {
+        "text": "explain exactly what it is and how this",
+        "start": 340.68,
+        "duration": 3
+      },
+      {
+        "text": "goes ahead and works. So, effectively,",
+        "start": 342.12,
+        "duration": 3.76
+      },
+      {
+        "text": "what it does is it gives the AI agent",
+        "start": 343.68,
+        "duration": 4.28
+      },
+      {
+        "text": "the ability to go ahead and browse the",
+        "start": 345.88,
+        "duration": 4.28
+      },
+      {
+        "text": "internet. And crucially, it can do this",
+        "start": 347.96,
+        "duration": 5.32
+      },
+      {
+        "text": "without taking control of your screen,",
+        "start": 350.16,
+        "duration": 4.4
+      },
+      {
+        "text": "which is really important and it's",
+        "start": 353.28,
+        "duration": 3.52
+      },
+      {
+        "text": "completely free to go ahead and grab at",
+        "start": 354.56,
+        "duration": 3.92
+      },
+      {
+        "text": "light.ego.app. Now, let's go through and",
+        "start": 356.8,
+        "duration": 3
+      },
+      {
+        "text": "explain what this does. You can see this",
+        "start": 358.48,
+        "duration": 2.8
+      },
+      {
+        "text": "working in the background here.",
+        "start": 359.8,
+        "duration": 3.44
+      },
+      {
+        "text": "Effectively, it goes ahead and allows",
+        "start": 361.28,
+        "duration": 3.52
+      },
+      {
+        "text": "the agent to go and do many different",
+        "start": 363.24,
+        "duration": 3.32
+      },
+      {
+        "text": "things. As you can see now, you give it",
+        "start": 364.8,
+        "duration": 3.44
+      },
+      {
+        "text": "a query on the left-hand side to ego",
+        "start": 366.56,
+        "duration": 3.8
+      },
+      {
+        "text": "browser to go and script the main posts",
+        "start": 368.24,
+        "duration": 3.92
+      },
+      {
+        "text": "from the X account, which is given over",
+        "start": 370.36,
+        "duration": 4.44
+      },
+      {
+        "text": "here, excluding pin posts, reposts, and",
+        "start": 372.16,
+        "duration": 4.64
+      },
+      {
+        "text": "posts labeled and you can see it's now",
+        "start": 374.8,
+        "duration": 3.92
+      },
+      {
+        "text": "essentially browsing the web, having a",
+        "start": 376.8,
+        "duration": 3.16
+      },
+      {
+        "text": "look, and then making intelligent",
+        "start": 378.72,
+        "duration": 3.44
+      },
+      {
+        "text": "decisions that it can do specifically on",
+        "start": 379.96,
+        "duration": 4.4
+      },
+      {
+        "text": "that webpage. But on my left-hand side,",
+        "start": 382.16,
+        "duration": 3.759
+      },
+      {
+        "text": "it basically brings all that information",
+        "start": 384.36,
+        "duration": 3.04
+      },
+      {
+        "text": "down there. You could ask it to do",
+        "start": 385.919,
+        "duration": 3.881
+      },
+      {
+        "text": "things like, \"Hey, go ahead uh by",
+        "start": 387.4,
+        "duration": 3.68
+      },
+      {
+        "text": "basically clicking on the ego browser",
+        "start": 389.8,
+        "duration": 3.08
+      },
+      {
+        "text": "plugin to go ahead and script the main",
+        "start": 391.08,
+        "duration": 3.72
+      },
+      {
+        "text": "posts or go and check out anything your",
+        "start": 392.88,
+        "duration": 3.68
+      },
+      {
+        "text": "competitors are doing.\" And again, you",
+        "start": 394.8,
+        "duration": 3.68
+      },
+      {
+        "text": "just go ahead and grab this straight",
+        "start": 396.56,
+        "duration": 3.4
+      },
+      {
+        "text": "from the GitHub. Now, the big problem",
+        "start": 398.48,
+        "duration": 2.96
+      },
+      {
+        "text": "that ego light is solving here is that",
+        "start": 399.96,
+        "duration": 3.32
+      },
+      {
+        "text": "most AIs themselves, when you use them,",
+        "start": 401.44,
+        "duration": 3.56
+      },
+      {
+        "text": "will either take control of the computer",
+        "start": 403.28,
+        "duration": 3.44
+      },
+      {
+        "text": "so you can't do anything else, or",
+        "start": 405,
+        "duration": 3.36
+      },
+      {
+        "text": "they'll have to use their own browsers,",
+        "start": 406.72,
+        "duration": 3.76
+      },
+      {
+        "text": "but those aren't necessarily signed into",
+        "start": 408.36,
+        "duration": 3.52
+      },
+      {
+        "text": "all the stuff that you're currently",
+        "start": 410.48,
+        "duration": 3.04
+      },
+      {
+        "text": "using. So, with ego light, you can use",
+        "start": 411.88,
+        "duration": 3.84
+      },
+      {
+        "text": "many different searches at the same",
+        "start": 413.52,
+        "duration": 3.399
+      },
+      {
+        "text": "time. And then with this, each",
+        "start": 415.72,
+        "duration": 3.48
+      },
+      {
+        "text": "individual ego light thing itself is in",
+        "start": 416.919,
+        "duration": 3.721
+      },
+      {
+        "text": "its own tab. You can use as many as you",
+        "start": 419.2,
+        "duration": 3.04
+      },
+      {
+        "text": "want to. And on top of that, you can",
+        "start": 420.64,
+        "duration": 3
+      },
+      {
+        "text": "effectively bring any model that you",
+        "start": 422.24,
+        "duration": 3.32
+      },
+      {
+        "text": "want to while it's using it, giving it a",
+        "start": 423.64,
+        "duration": 3.92
+      },
+      {
+        "text": "deserved spot on this top 10 list. Now,",
+        "start": 425.56,
+        "duration": 4.24
+      },
+      {
+        "text": "we're taking over now to level four,",
+        "start": 427.56,
+        "duration": 4.48
+      },
+      {
+        "text": "which is called rear, which essentially",
+        "start": 429.8,
+        "duration": 6.08
+      },
+      {
+        "text": "lets you ask how any app does something.",
+        "start": 432.04,
+        "duration": 5.12
+      },
+      {
+        "text": "What do I mean by that? Well, this one",
+        "start": 435.88,
+        "duration": 2.56
+      },
+      {
+        "text": "is a really, really interesting one. So,",
+        "start": 437.16,
+        "duration": 3.28
+      },
+      {
+        "text": "let's just say that you have an app that",
+        "start": 438.44,
+        "duration": 3.92
+      },
+      {
+        "text": "you want to reimagine or you want to",
+        "start": 440.44,
+        "duration": 3.92
+      },
+      {
+        "text": "improve, but you don't understand how it",
+        "start": 442.36,
+        "duration": 3.8
+      },
+      {
+        "text": "works when you look at the UI and the",
+        "start": 444.36,
+        "duration": 4.16
+      },
+      {
+        "text": "logic and the data. With rear, we can",
+        "start": 446.16,
+        "duration": 4.72
+      },
+      {
+        "text": "effectively go ahead and solve what that",
+        "start": 448.52,
+        "duration": 4.36
+      },
+      {
+        "text": "actually looks like. Again,",
+        "start": 450.88,
+        "duration": 4.6
+      },
+      {
+        "text": "completely free repo, 65,000 stars. This",
+        "start": 452.88,
+        "duration": 4.12
+      },
+      {
+        "text": "one is growing, is very powerful. Is",
+        "start": 455.48,
+        "duration": 3.32
+      },
+      {
+        "text": "actually the fastest growing repo on",
+        "start": 457,
+        "duration": 4.32
+      },
+      {
+        "text": "GitHub this very week, and it is blowing",
+        "start": 458.8,
+        "duration": 4.2
+      },
+      {
+        "text": "up for good reason. Now, in terms of how",
+        "start": 461.32,
+        "duration": 3.44
+      },
+      {
+        "text": "you actually go ahead and use this, it's",
+        "start": 463,
+        "duration": 3
+      },
+      {
+        "text": "pretty straightforward. You set it up",
+        "start": 464.76,
+        "duration": 2.88
+      },
+      {
+        "text": "with one command. You can ask how does",
+        "start": 466,
+        "duration": 3.6
+      },
+      {
+        "text": "search work in this note app. It shows",
+        "start": 467.64,
+        "duration": 3.4
+      },
+      {
+        "text": "the evidence, then can build the same",
+        "start": 469.6,
+        "duration": 3.24
+      },
+      {
+        "text": "feature into any project that you have.",
+        "start": 471.04,
+        "duration": 3.68
+      },
+      {
+        "text": "On level five, really enhances design",
+        "start": 472.84,
+        "duration": 3.44
+      },
+      {
+        "text": "and takes it to a completely new level.",
+        "start": 474.72,
+        "duration": 4.36
+      },
+      {
+        "text": "This is something called 21st.dev.",
+        "start": 476.28,
+        "duration": 5
+      },
+      {
+        "text": "Um this can integrate with either Claude",
+        "start": 479.08,
+        "duration": 4.24
+      },
+      {
+        "text": "or ChatGPT or any model that you",
+        "start": 481.28,
+        "duration": 4.56
+      },
+      {
+        "text": "effectively like. Now, what it is really",
+        "start": 483.32,
+        "duration": 4.96
+      },
+      {
+        "text": "is a component library. Think of it as a",
+        "start": 485.84,
+        "duration": 4.4
+      },
+      {
+        "text": "Willy Wonka's Emporium essentially for",
+        "start": 488.28,
+        "duration": 3.44
+      },
+      {
+        "text": "any kind of design component that you",
+        "start": 490.24,
+        "duration": 3.16
+      },
+      {
+        "text": "want. It is a living, breathing",
+        "start": 491.72,
+        "duration": 3.48
+      },
+      {
+        "text": "interface. You can effectively do",
+        "start": 493.4,
+        "duration": 2.88
+      },
+      {
+        "text": "anything you want to. You can look at",
+        "start": 495.2,
+        "duration": 2.6
+      },
+      {
+        "text": "community components. You can look at",
+        "start": 496.28,
+        "duration": 3.44
+      },
+      {
+        "text": "anything else. In fact, I even built it",
+        "start": 497.8,
+        "duration": 3.96
+      },
+      {
+        "text": "here when I was redoing my entire UI.",
+        "start": 499.72,
+        "duration": 3.28
+      },
+      {
+        "text": "So, for example, this is Glider, my",
+        "start": 501.76,
+        "duration": 3.32
+      },
+      {
+        "text": "speech-to-text startup. I redesigned my",
+        "start": 503,
+        "duration": 5.64
+      },
+      {
+        "text": "UI and I used a lot of 21st.dev directly",
+        "start": 505.08,
+        "duration": 5.32
+      },
+      {
+        "text": "inside Claude code to do this. You can",
+        "start": 508.64,
+        "duration": 3.279
+      },
+      {
+        "text": "even see Look at this hover animation,",
+        "start": 510.4,
+        "duration": 3.6
+      },
+      {
+        "text": "guys. You can see this? This is directly",
+        "start": 511.919,
+        "duration": 4.12
+      },
+      {
+        "text": "from 21st.dev. So, when you land on",
+        "start": 514,
+        "duration": 4.12
+      },
+      {
+        "text": "21st.dev, this shows an example. You can",
+        "start": 516.039,
+        "duration": 3.801
+      },
+      {
+        "text": "see what's trending top today in the",
+        "start": 518.12,
+        "duration": 3.4
+      },
+      {
+        "text": "world. Look at this. This right now is",
+        "start": 519.84,
+        "duration": 3.199
+      },
+      {
+        "text": "something that you can add into anything",
+        "start": 521.52,
+        "duration": 3.28
+      },
+      {
+        "text": "you want to. Say you've got images and",
+        "start": 523.039,
+        "duration": 3.001
+      },
+      {
+        "text": "you want to give an Apple-esque style.",
+        "start": 524.8,
+        "duration": 3
+      },
+      {
+        "text": "We can do that. This one's really cool.",
+        "start": 526.04,
+        "duration": 3.96
+      },
+      {
+        "text": "This is pretty freaking crazy. I can",
+        "start": 527.8,
+        "duration": 3.72
+      },
+      {
+        "text": "copy this prompt like so, then head over",
+        "start": 530,
+        "duration": 3.12
+      },
+      {
+        "text": "to Claude, and I could say, \"Hey, go",
+        "start": 531.52,
+        "duration": 3.92
+      },
+      {
+        "text": "ahead for me and build me this in an app",
+        "start": 533.12,
+        "duration": 3.84
+      },
+      {
+        "text": "on my own laptop, please. Make it as",
+        "start": 535.44,
+        "duration": 3.08
+      },
+      {
+        "text": "beautiful as possible, all right?\" I can",
+        "start": 536.96,
+        "duration": 3.24
+      },
+      {
+        "text": "come down then and drop that in. Now,",
+        "start": 538.52,
+        "duration": 3.08
+      },
+      {
+        "text": "here's the thing there, guys. Maybe we",
+        "start": 540.2,
+        "duration": 2.6
+      },
+      {
+        "text": "don't actually want to go ahead and",
+        "start": 541.6,
+        "duration": 2.8
+      },
+      {
+        "text": "spend our time browsing through",
+        "start": 542.8,
+        "duration": 3.08
+      },
+      {
+        "text": "everything. This is where it's really",
+        "start": 544.4,
+        "duration": 2.84
+      },
+      {
+        "text": "cool cuz what we can actually do with",
+        "start": 545.88,
+        "duration": 4.959
+      },
+      {
+        "text": "the 21st.dev MCP is give Claude access",
+        "start": 547.24,
+        "duration": 5.76
+      },
+      {
+        "text": "to this huge Alexandria's library of",
+        "start": 550.839,
+        "duration": 3.761
+      },
+      {
+        "text": "components, which means that I don't",
+        "start": 553,
+        "duration": 3.28
+      },
+      {
+        "text": "need to search anymore. So, whether or",
+        "start": 554.6,
+        "duration": 3.56
+      },
+      {
+        "text": "not Claude wants to go ahead and grab",
+        "start": 556.28,
+        "duration": 4.48
+      },
+      {
+        "text": "footers or navbars or featuring features",
+        "start": 558.16,
+        "duration": 4.8
+      },
+      {
+        "text": "or pricing, Claude can just dynamically",
+        "start": 560.76,
+        "duration": 4.72
+      },
+      {
+        "text": "grab the best UI assets to build",
+        "start": 562.96,
+        "duration": 4.16
+      },
+      {
+        "text": "anything that I want to. And it's super",
+        "start": 565.48,
+        "duration": 3.12
+      },
+      {
+        "text": "easy to set up. And for example, the",
+        "start": 567.12,
+        "duration": 2.64
+      },
+      {
+        "text": "bottom here, I'll just come down and",
+        "start": 568.6,
+        "duration": 2.92
+      },
+      {
+        "text": "say, \"Then I'd like it to go ahead and",
+        "start": 569.76,
+        "duration": 3.92
+      },
+      {
+        "text": "connect to the 21st.dev",
+        "start": 571.52,
+        "duration": 3.92
+      },
+      {
+        "text": "MCP.\" And let me know any instructions",
+        "start": 573.68,
+        "duration": 3.72
+      },
+      {
+        "text": "that you want, and go ahead and grab for",
+        "start": 575.44,
+        "duration": 4.32
+      },
+      {
+        "text": "me a beautiful photo from that page to",
+        "start": 577.4,
+        "duration": 4.32
+      },
+      {
+        "text": "integrate onto the website and also a",
+        "start": 579.76,
+        "duration": 3.92
+      },
+      {
+        "text": "beautiful interactive",
+        "start": 581.72,
+        "duration": 3.16
+      },
+      {
+        "text": "header at the top that has all the",
+        "start": 583.68,
+        "duration": 2.92
+      },
+      {
+        "text": "different sections of the website. And",
+        "start": 584.88,
+        "duration": 2.72
+      },
+      {
+        "text": "once you can do that, you're going to",
+        "start": 586.6,
+        "duration": 2.52
+      },
+      {
+        "text": "send that one off. Now, even if I come",
+        "start": 587.6,
+        "duration": 3.04
+      },
+      {
+        "text": "back over here to Glido for example to",
+        "start": 589.12,
+        "duration": 3.64
+      },
+      {
+        "text": "show you what I built using this, again",
+        "start": 590.64,
+        "duration": 3.2
+      },
+      {
+        "text": "cuz I talk about the stuff that I'm",
+        "start": 592.76,
+        "duration": 2.96
+      },
+      {
+        "text": "using here, I can click on that and just",
+        "start": 593.84,
+        "duration": 3.84
+      },
+      {
+        "text": "look at this guys. And I did use some",
+        "start": 595.72,
+        "duration": 3.88
+      },
+      {
+        "text": "Claude motion graphics to really elevate",
+        "start": 597.68,
+        "duration": 3.08
+      },
+      {
+        "text": "it. So, one of the features that we're",
+        "start": 599.6,
+        "duration": 3.12
+      },
+      {
+        "text": "using on Glido right now is the ability",
+        "start": 600.76,
+        "duration": 4.72
+      },
+      {
+        "text": "to summarize any webpage here. How do we",
+        "start": 602.72,
+        "duration": 4.28
+      },
+      {
+        "text": "show that in a beautiful way? I might",
+        "start": 605.48,
+        "duration": 3.12
+      },
+      {
+        "text": "for example come down and say, \"Hey,",
+        "start": 607,
+        "duration": 3.68
+      },
+      {
+        "text": "what is this webpage about?\" And I can",
+        "start": 608.6,
+        "duration": 3.44
+      },
+      {
+        "text": "use Glido to do that. So, the question",
+        "start": 610.68,
+        "duration": 3
+      },
+      {
+        "text": "for me was, \"How do I go ahead and",
+        "start": 612.04,
+        "duration": 2.88
+      },
+      {
+        "text": "actually share that?\" And there you go,",
+        "start": 613.68,
+        "duration": 2.72
+      },
+      {
+        "text": "you can see this page is an onboarding",
+        "start": 614.92,
+        "duration": 2.88
+      },
+      {
+        "text": "page for Glido. I can get to summarize",
+        "start": 616.4,
+        "duration": 3.52
+      },
+      {
+        "text": "videos. I can do loads of other stuff.",
+        "start": 617.8,
+        "duration": 3.2
+      },
+      {
+        "text": "But what this really takes it to the",
+        "start": 619.92,
+        "duration": 3.08
+      },
+      {
+        "text": "level is, again, look at the components",
+        "start": 621,
+        "duration": 3.24
+      },
+      {
+        "text": "you can just go and grab from this",
+        "start": 623,
+        "duration": 3.2
+      },
+      {
+        "text": "libraries. And you can obviously design",
+        "start": 624.24,
+        "duration": 3.8
+      },
+      {
+        "text": "anything guys, but realistically, you",
+        "start": 626.2,
+        "duration": 4.76
+      },
+      {
+        "text": "don't always necessarily have to. Go and",
+        "start": 628.04,
+        "duration": 4.28
+      },
+      {
+        "text": "find the best design principles that",
+        "start": 630.96,
+        "duration": 3.52
+      },
+      {
+        "text": "exist and leverage them by connecting",
+        "start": 632.32,
+        "duration": 3.6
+      },
+      {
+        "text": "them together. Now, obviously, you can",
+        "start": 634.48,
+        "duration": 2.72
+      },
+      {
+        "text": "run these codes in your terminal to",
+        "start": 635.92,
+        "duration": 3.48
+      },
+      {
+        "text": "connect 21st.dev or any of the other",
+        "start": 637.2,
+        "duration": 3.6
+      },
+      {
+        "text": "apps. But the reality is, you can just",
+        "start": 639.4,
+        "duration": 2.64
+      },
+      {
+        "text": "literally now at a stage where you can",
+        "start": 640.8,
+        "duration": 2.8
+      },
+      {
+        "text": "yap to Claude and it will go ahead and",
+        "start": 642.04,
+        "duration": 3.72
+      },
+      {
+        "text": "do that for you. And to connect 21st.dev",
+        "start": 643.6,
+        "duration": 4.16
+      },
+      {
+        "text": "to your CLI to Claude, you can literally",
+        "start": 645.76,
+        "duration": 3.36
+      },
+      {
+        "text": "on the left-hand side of the menu guys,",
+        "start": 647.76,
+        "duration": 3.52
+      },
+      {
+        "text": "click on CLI and MCP, pick your",
+        "start": 649.12,
+        "duration": 3.56
+      },
+      {
+        "text": "particular browser, and literally you're",
+        "start": 651.28,
+        "duration": 3.04
+      },
+      {
+        "text": "just going to come down and copy this",
+        "start": 652.68,
+        "duration": 2.84
+      },
+      {
+        "text": "and run it in my terminal. And you can",
+        "start": 654.32,
+        "duration": 2.48
+      },
+      {
+        "text": "do that very easily by coming into",
+        "start": 655.52,
+        "duration": 2.72
+      },
+      {
+        "text": "Claude, clicking on this little terminal",
+        "start": 656.8,
+        "duration": 3.36
+      },
+      {
+        "text": "here, and controlling V. And then guys,",
+        "start": 658.24,
+        "duration": 3.2
+      },
+      {
+        "text": "we have this exact thing. Now, bear in",
+        "start": 660.16,
+        "duration": 3.88
+      },
+      {
+        "text": "mind, this is all taken from 21st.dev. I",
+        "start": 661.44,
+        "duration": 4
+      },
+      {
+        "text": "mean, look at this guys. This is",
+        "start": 664.04,
+        "duration": 3.12
+      },
+      {
+        "text": "ridiculous.",
+        "start": 665.44,
+        "duration": 2.8
+      },
+      {
+        "text": "I mean, I'm going to come down and see",
+        "start": 667.16,
+        "duration": 2.44
+      },
+      {
+        "text": "the actual main thing I wanted. As you",
+        "start": 668.24,
+        "duration": 3.24
+      },
+      {
+        "text": "can see, I've got this guy here, which",
+        "start": 669.6,
+        "duration": 3.64
+      },
+      {
+        "text": "is fantastic. I can check out the tower",
+        "start": 671.48,
+        "duration": 2.72
+      },
+      {
+        "text": "height. I can move it into many",
+        "start": 673.24,
+        "duration": 2.88
+      },
+      {
+        "text": "different things. Move that around, do",
+        "start": 674.2,
+        "duration": 3.6
+      },
+      {
+        "text": "what I want to do. I can refresh that.",
+        "start": 676.12,
+        "duration": 3.92
+      },
+      {
+        "text": "Oh my goodness. This actually, weirdly",
+        "start": 677.8,
+        "duration": 4.32
+      },
+      {
+        "text": "enough, is from I think they have the",
+        "start": 680.04,
+        "duration": 3.44
+      },
+      {
+        "text": "same thing on school, which is really",
+        "start": 682.12,
+        "duration": 2.96
+      },
+      {
+        "text": "interesting. And again, we can see that",
+        "start": 683.48,
+        "duration": 4.359
+      },
+      {
+        "text": "beautiful transition. Come up here. We",
+        "start": 685.08,
+        "duration": 4.28
+      },
+      {
+        "text": "can pick the palette. All these",
+        "start": 687.839,
+        "duration": 3.321
+      },
+      {
+        "text": "different I mean, this is absolutely",
+        "start": 689.36,
+        "duration": 3.64
+      },
+      {
+        "text": "gorgeous guys. This is ridiculous.",
+        "start": 691.16,
+        "duration": 3.76
+      },
+      {
+        "text": "Again, six moods one city over different",
+        "start": 693,
+        "duration": 3.52
+      },
+      {
+        "text": "data that we grabbed. And bear in mind",
+        "start": 694.92,
+        "duration": 3.64
+      },
+      {
+        "text": "you can now just tell Claude or Codex,",
+        "start": 696.52,
+        "duration": 3.76
+      },
+      {
+        "text": "whatever, go ahead and grab it. And what",
+        "start": 698.56,
+        "duration": 2.88
+      },
+      {
+        "text": "I love about this, look at this thing",
+        "start": 700.28,
+        "duration": 2.64
+      },
+      {
+        "text": "the top guys. You can see how that moves",
+        "start": 701.44,
+        "duration": 4.04
+      },
+      {
+        "text": "from left to right. How freaking sick is",
+        "start": 702.92,
+        "duration": 4.12
+      },
+      {
+        "text": "that? Anyway, I'm getting very nerdy",
+        "start": 705.48,
+        "duration": 3.08
+      },
+      {
+        "text": "about this, but you get the idea. Then",
+        "start": 707.04,
+        "duration": 3.28
+      },
+      {
+        "text": "after this one, we go on now to level",
+        "start": 708.56,
+        "duration": 4.28
+      },
+      {
+        "text": "six, which is the skill that finds new",
+        "start": 710.32,
+        "duration": 4.6
+      },
+      {
+        "text": "skills. This one is pretty outrageous.",
+        "start": 712.84,
+        "duration": 4.4
+      },
+      {
+        "text": "Say for example, you say to chat GPT or",
+        "start": 714.92,
+        "duration": 3.96
+      },
+      {
+        "text": "Claude, I need a skill to create",
+        "start": 717.24,
+        "duration": 3.32
+      },
+      {
+        "text": "beautiful PowerPoint presentations or I",
+        "start": 718.88,
+        "duration": 3.44
+      },
+      {
+        "text": "need to make slides. What this actually",
+        "start": 720.56,
+        "duration": 4.28
+      },
+      {
+        "text": "does is goes and finds the best skill",
+        "start": 722.32,
+        "duration": 4.68
+      },
+      {
+        "text": "for you to actually use. It's called the",
+        "start": 724.84,
+        "duration": 4.36
+      },
+      {
+        "text": "cell labs and its skills. Little side",
+        "start": 727,
+        "duration": 4.76
+      },
+      {
+        "text": "tip by the way, never ever ever install",
+        "start": 729.2,
+        "duration": 4.56
+      },
+      {
+        "text": "any skill without running it through",
+        "start": 731.76,
+        "duration": 3.96
+      },
+      {
+        "text": "chat GPT and Claude first. There's so",
+        "start": 733.76,
+        "duration": 3.32
+      },
+      {
+        "text": "many great actors out there, but there",
+        "start": 735.72,
+        "duration": 3.32
+      },
+      {
+        "text": "are also some not so great actors. So,",
+        "start": 737.08,
+        "duration": 3.48
+      },
+      {
+        "text": "it's always good just to get it to run",
+        "start": 739.04,
+        "duration": 3.68
+      },
+      {
+        "text": "through and understand what's in the",
+        "start": 740.56,
+        "duration": 3.64
+      },
+      {
+        "text": "repo before you put it on your own",
+        "start": 742.72,
+        "duration": 3.12
+      },
+      {
+        "text": "personal machine to make sure that you",
+        "start": 744.2,
+        "duration": 3.4
+      },
+      {
+        "text": "are crushing it. And by the way guys,",
+        "start": 745.84,
+        "duration": 2.84
+      },
+      {
+        "text": "the thing about this skill, which I",
+        "start": 747.6,
+        "duration": 2.76
+      },
+      {
+        "text": "think is super duper interesting, is the",
+        "start": 748.68,
+        "duration": 3.92
+      },
+      {
+        "text": "fact that it is everywhere right now. It",
+        "start": 750.36,
+        "duration": 4.32
+      },
+      {
+        "text": "is the top skill right now on skills.sh.",
+        "start": 752.6,
+        "duration": 3.72
+      },
+      {
+        "text": "It is the most popular skill. It's the",
+        "start": 754.68,
+        "duration": 3.2
+      },
+      {
+        "text": "skill to find new skills. And if this",
+        "start": 756.32,
+        "duration": 3.16
+      },
+      {
+        "text": "all sounds like I'm speaking design",
+        "start": 757.88,
+        "duration": 2.84
+      },
+      {
+        "text": "Spanish, I'm going to put a link down",
+        "start": 759.48,
+        "duration": 3.28
+      },
+      {
+        "text": "below for my full Claude code",
+        "start": 760.72,
+        "duration": 4.08
+      },
+      {
+        "text": "masterclass. I'll take you from beginner",
+        "start": 762.76,
+        "duration": 3.68
+      },
+      {
+        "text": "to hero and include stuff that I have",
+        "start": 764.8,
+        "duration": 3.92
+      },
+      {
+        "text": "never shared on YouTube. And you also",
+        "start": 766.44,
+        "duration": 4.48
+      },
+      {
+        "text": "get immediate access to my agentic",
+        "start": 768.72,
+        "duration": 4.119
+      },
+      {
+        "text": "operating system that I put so many",
+        "start": 770.92,
+        "duration": 3.76
+      },
+      {
+        "text": "hours into. It has everything from my",
+        "start": 772.839,
+        "duration": 4
+      },
+      {
+        "text": "entire unique memory systems that",
+        "start": 774.68,
+        "duration": 4.04
+      },
+      {
+        "text": "connect to everything from Grokbot to",
+        "start": 776.839,
+        "duration": 5
+      },
+      {
+        "text": "dots to Claude to Codex in one gigantic",
+        "start": 778.72,
+        "duration": 5.04
+      },
+      {
+        "text": "beautiful system. Also has my entire",
+        "start": 781.839,
+        "duration": 3.721
+      },
+      {
+        "text": "design agentic operating system and a",
+        "start": 783.76,
+        "duration": 3.2
+      },
+      {
+        "text": "gazillion other things. You get this",
+        "start": 785.56,
+        "duration": 3.2
+      },
+      {
+        "text": "immediately. I'll put a link down below",
+        "start": 786.96,
+        "duration": 3.64
+      },
+      {
+        "text": "so you can grab that. Level up. I meet",
+        "start": 788.76,
+        "duration": 3.44
+      },
+      {
+        "text": "other like-minded people that are going",
+        "start": 790.6,
+        "duration": 3.76
+      },
+      {
+        "text": "to give you a completely unfair",
+        "start": 792.2,
+        "duration": 4.2
+      },
+      {
+        "text": "advantage. So, grab that before your",
+        "start": 794.36,
+        "duration": 3.96
+      },
+      {
+        "text": "competitors do for sure. Now, number",
+        "start": 796.4,
+        "duration": 3.76
+      },
+      {
+        "text": "seven level seven here is essentially",
+        "start": 798.32,
+        "duration": 4
+      },
+      {
+        "text": "idea of what we call Orca, which is one",
+        "start": 800.16,
+        "duration": 4.92
+      },
+      {
+        "text": "person and many agents. This one here is",
+        "start": 802.32,
+        "duration": 4.36
+      },
+      {
+        "text": "a very interesting repo and I'll open it",
+        "start": 805.08,
+        "duration": 2.76
+      },
+      {
+        "text": "up right now so you can see what it",
+        "start": 806.68,
+        "duration": 2.56
+      },
+      {
+        "text": "looks like. As you can see this one's",
+        "start": 807.84,
+        "duration": 3.8
+      },
+      {
+        "text": "about 89,000 stars. You can see what it",
+        "start": 809.24,
+        "duration": 4.8
+      },
+      {
+        "text": "works and exactly how to go ahead and",
+        "start": 811.64,
+        "duration": 3.68
+      },
+      {
+        "text": "use it. And the idea with this is that",
+        "start": 814.04,
+        "duration": 4.32
+      },
+      {
+        "text": "you can run multiple agents side by side",
+        "start": 815.32,
+        "duration": 4.88
+      },
+      {
+        "text": "running one task. And you basically hand",
+        "start": 818.36,
+        "duration": 4.28
+      },
+      {
+        "text": "out the jobs and every agent works",
+        "start": 820.2,
+        "duration": 4.56
+      },
+      {
+        "text": "simultaneously for you at the same and",
+        "start": 822.64,
+        "duration": 3.48
+      },
+      {
+        "text": "then each one of those agents will go",
+        "start": 824.76,
+        "duration": 3.4
+      },
+      {
+        "text": "ahead and finish his job independently.",
+        "start": 826.12,
+        "duration": 4.24
+      },
+      {
+        "text": "Um it's literally almost 90,000 stars.",
+        "start": 828.16,
+        "duration": 3.84
+      },
+      {
+        "text": "Most of them have actually happened this",
+        "start": 830.36,
+        "duration": 3.52
+      },
+      {
+        "text": "month and it's growing pretty quickly to",
+        "start": 832,
+        "duration": 3.88
+      },
+      {
+        "text": "be fair. To install it just grab out",
+        "start": 833.88,
+        "duration": 3.76
+      },
+      {
+        "text": "your URL, give it a clone and then you",
+        "start": 835.88,
+        "duration": 3.96
+      },
+      {
+        "text": "just give each agent you want its own",
+        "start": 837.64,
+        "duration": 4
+      },
+      {
+        "text": "individual task and this is the exact UI",
+        "start": 839.84,
+        "duration": 3.16
+      },
+      {
+        "text": "that you're going to see once you go",
+        "start": 841.64,
+        "duration": 2.76
+      },
+      {
+        "text": "ahead and download it. And once it's",
+        "start": 843,
+        "duration": 2.56
+      },
+      {
+        "text": "happened you can actually go ahead and",
+        "start": 844.4,
+        "duration": 3.4
+      },
+      {
+        "text": "review all that individual work side by",
+        "start": 845.56,
+        "duration": 3.72
+      },
+      {
+        "text": "side. And this is the UI that you're",
+        "start": 847.8,
+        "duration": 2.44
+      },
+      {
+        "text": "going to see and as you can see they've",
+        "start": 849.28,
+        "duration": 3.36
+      },
+      {
+        "text": "got a really cool nice crisp interface.",
+        "start": 850.24,
+        "duration": 3.64
+      },
+      {
+        "text": "On the left hand side you can see what",
+        "start": 852.64,
+        "duration": 2.92
+      },
+      {
+        "text": "you've got pinned here, all the tasks",
+        "start": 853.88,
+        "duration": 3.52
+      },
+      {
+        "text": "here that are in progress. And obviously",
+        "start": 855.56,
+        "duration": 2.88
+      },
+      {
+        "text": "you've got this as well which is",
+        "start": 857.4,
+        "duration": 3.04
+      },
+      {
+        "text": "fantastic oversight in terms of really",
+        "start": 858.44,
+        "duration": 3.48
+      },
+      {
+        "text": "just using multiple different agents at",
+        "start": 860.44,
+        "duration": 2.84
+      },
+      {
+        "text": "the same time which is really handy. And",
+        "start": 861.92,
+        "duration": 2.56
+      },
+      {
+        "text": "then I want to talk about a bonus",
+        "start": 863.28,
+        "duration": 3.08
+      },
+      {
+        "text": "integration called Zapier. Funnily",
+        "start": 864.48,
+        "duration": 3.72
+      },
+      {
+        "text": "enough my very first tech startup I",
+        "start": 866.36,
+        "duration": 3.84
+      },
+      {
+        "text": "actually initially built on Zapier and I",
+        "start": 868.2,
+        "duration": 4
+      },
+      {
+        "text": "did that years ago before it was cool on",
+        "start": 870.2,
+        "duration": 3.28
+      },
+      {
+        "text": "internet. Now one of the reasons I",
+        "start": 872.2,
+        "duration": 2.52
+      },
+      {
+        "text": "really want to touch on Zapier here is",
+        "start": 873.48,
+        "duration": 3.08
+      },
+      {
+        "text": "because we are increasingly now getting",
+        "start": 874.72,
+        "duration": 3.88
+      },
+      {
+        "text": "to the level, okay, where we're using",
+        "start": 876.56,
+        "duration": 3.64
+      },
+      {
+        "text": "multiple different agents. If I click on",
+        "start": 878.6,
+        "duration": 3.36
+      },
+      {
+        "text": "agents my agents go out. I've got",
+        "start": 880.2,
+        "duration": 3.639
+      },
+      {
+        "text": "Grokbot, I've got Hermes, I've got Dots,",
+        "start": 881.96,
+        "duration": 3.64
+      },
+      {
+        "text": "I've got all the systems here coming by",
+        "start": 883.839,
+        "duration": 3.361
+      },
+      {
+        "text": "and together. I have my dashboard, I",
+        "start": 885.6,
+        "duration": 4.28
+      },
+      {
+        "text": "have ChatGPT, I have Claude and they all",
+        "start": 887.2,
+        "duration": 4.72
+      },
+      {
+        "text": "individually have their own unique",
+        "start": 889.88,
+        "duration": 4.08
+      },
+      {
+        "text": "configurations and connections, right?",
+        "start": 891.92,
+        "duration": 3.56
+      },
+      {
+        "text": "They need access to your Google Mail,",
+        "start": 893.96,
+        "duration": 3.4
+      },
+      {
+        "text": "they need access to your calendar, your",
+        "start": 895.48,
+        "duration": 3.88
+      },
+      {
+        "text": "Slack, your bank details, whatever the",
+        "start": 897.36,
+        "duration": 3.84
+      },
+      {
+        "text": "specific thing is. One of my favorite",
+        "start": 899.36,
+        "duration": 3.56
+      },
+      {
+        "text": "things about Zapier MCP is you can",
+        "start": 901.2,
+        "duration": 3.56
+      },
+      {
+        "text": "actually have Think of it as your",
+        "start": 902.92,
+        "duration": 4.04
+      },
+      {
+        "text": "connection lender. Essentially it's",
+        "start": 904.76,
+        "duration": 3.84
+      },
+      {
+        "text": "almost like a universal key where you",
+        "start": 906.96,
+        "duration": 3
+      },
+      {
+        "text": "connect your stuff to Zapier whether",
+        "start": 908.6,
+        "duration": 3.36
+      },
+      {
+        "text": "it's Airtable or Canva or School and it",
+        "start": 909.96,
+        "duration": 3.72
+      },
+      {
+        "text": "has integrations that you don't have",
+        "start": 911.96,
+        "duration": 3.879
+      },
+      {
+        "text": "access to actually outside of it. Like",
+        "start": 913.68,
+        "duration": 4
+      },
+      {
+        "text": "School for example, you need Zapier to",
+        "start": 915.839,
+        "duration": 3.521
+      },
+      {
+        "text": "run those things like invite people to",
+        "start": 917.68,
+        "duration": 2.84
+      },
+      {
+        "text": "the community. So So, I'm on my",
+        "start": 919.36,
+        "duration": 2.28
+      },
+      {
+        "text": "community for example and I want to",
+        "start": 920.52,
+        "duration": 3.32
+      },
+      {
+        "text": "invite somebody, um I can actually just",
+        "start": 921.64,
+        "duration": 4.16
+      },
+      {
+        "text": "go ahead and use Zapier to do that,",
+        "start": 923.84,
+        "duration": 4.16
+      },
+      {
+        "text": "right? Very, very, very cool. Now, one",
+        "start": 925.8,
+        "duration": 3.76
+      },
+      {
+        "text": "cool thing is once you set this up, and",
+        "start": 928,
+        "duration": 2.88
+      },
+      {
+        "text": "you can configure the individual",
+        "start": 929.56,
+        "duration": 3.08
+      },
+      {
+        "text": "permissions, like what do I want to give",
+        "start": 930.88,
+        "duration": 3.04
+      },
+      {
+        "text": "it the ability to do on my Gmail for",
+        "start": 932.64,
+        "duration": 3.44
+      },
+      {
+        "text": "example, I might say, \"Hey, it can send",
+        "start": 933.92,
+        "duration": 3.88
+      },
+      {
+        "text": "an email. No, it can't.\" And you",
+        "start": 936.08,
+        "duration": 2.96
+      },
+      {
+        "text": "configure this basically this",
+        "start": 937.8,
+        "duration": 3
+      },
+      {
+        "text": "connections once, and you can use it",
+        "start": 939.04,
+        "duration": 2.84
+      },
+      {
+        "text": "anywhere. I'll put a link down below.",
+        "start": 940.8,
+        "duration": 3.48
+      },
+      {
+        "text": "It's unbelievably easy to set up, and",
+        "start": 941.88,
+        "duration": 5.08
+      },
+      {
+        "text": "once you all you do then is basically",
+        "start": 944.28,
+        "duration": 4.48
+      },
+      {
+        "text": "connect Zapier to any one of those",
+        "start": 946.96,
+        "duration": 4.24
+      },
+      {
+        "text": "agents, and then you can use that exact",
+        "start": 948.76,
+        "duration": 5
+      },
+      {
+        "text": "list, those exact connections for",
+        "start": 951.2,
+        "duration": 4.44
+      },
+      {
+        "text": "everything that you're doing. Um it is",
+        "start": 953.76,
+        "duration": 3.52
+      },
+      {
+        "text": "pretty freaking exceptional doing that,",
+        "start": 955.64,
+        "duration": 3.4
+      },
+      {
+        "text": "and it just saves you a ton of time, and",
+        "start": 957.28,
+        "duration": 3.84
+      },
+      {
+        "text": "does unlock new connections that you're",
+        "start": 959.04,
+        "duration": 4.04
+      },
+      {
+        "text": "not getting in other places. If you can",
+        "start": 961.12,
+        "duration": 3.48
+      },
+      {
+        "text": "imagine it, you can probably find a",
+        "start": 963.08,
+        "duration": 3.44
+      },
+      {
+        "text": "connection there as well. Now, with that",
+        "start": 964.6,
+        "duration": 3.28
+      },
+      {
+        "text": "in mind, let's talk about level eight.",
+        "start": 966.52,
+        "duration": 3
+      },
+      {
+        "text": "Now, this one is called the Arena skill.",
+        "start": 967.88,
+        "duration": 3.04
+      },
+      {
+        "text": "If you've ever played Fortnite, which",
+        "start": 969.52,
+        "duration": 3.56
+      },
+      {
+        "text": "let's be fair, many of us have, where",
+        "start": 970.92,
+        "duration": 3.76
+      },
+      {
+        "text": "you drop 100 people on a map, and they",
+        "start": 973.08,
+        "duration": 3.52
+      },
+      {
+        "text": "all battle out to find the one champion.",
+        "start": 974.68,
+        "duration": 3.88
+      },
+      {
+        "text": "Arena is very interesting, so what Arena",
+        "start": 976.6,
+        "duration": 5.84
+      },
+      {
+        "text": "does, it has 100 claws fight, okay? This",
+        "start": 978.56,
+        "duration": 5.24
+      },
+      {
+        "text": "is called the Arena skill. It's pretty",
+        "start": 982.44,
+        "duration": 2.8
+      },
+      {
+        "text": "powerful.",
+        "start": 983.8,
+        "duration": 3.08
+      },
+      {
+        "text": "I'll link down here below. It's a quite",
+        "start": 985.24,
+        "duration": 3.12
+      },
+      {
+        "text": "new skill, but it's very, very",
+        "start": 986.88,
+        "duration": 3.44
+      },
+      {
+        "text": "interesting, and it's a very unique way",
+        "start": 988.36,
+        "duration": 4.04
+      },
+      {
+        "text": "of actually finding what is the best",
+        "start": 990.32,
+        "duration": 4.44
+      },
+      {
+        "text": "answer to a question. Now, what's really",
+        "start": 992.4,
+        "duration": 3.72
+      },
+      {
+        "text": "interesting is they face off and they",
+        "start": 994.76,
+        "duration": 2.96
+      },
+      {
+        "text": "have a winner. So, if you imagine like",
+        "start": 996.12,
+        "duration": 3.8
+      },
+      {
+        "text": "in a bracket style, where you have these",
+        "start": 997.72,
+        "duration": 4.2
+      },
+      {
+        "text": "100 different questions, 100 different",
+        "start": 999.92,
+        "duration": 4.4
+      },
+      {
+        "text": "answers, that effectively you look at",
+        "start": 1001.92,
+        "duration": 4.48
+      },
+      {
+        "text": "answer A and B together, okay? And the",
+        "start": 1004.32,
+        "duration": 4.12
+      },
+      {
+        "text": "best answer goes to the next stage, and",
+        "start": 1006.4,
+        "duration": 3.92
+      },
+      {
+        "text": "so and so and so forth until you get to",
+        "start": 1008.44,
+        "duration": 4.56
+      },
+      {
+        "text": "the final answer. And funnily enough, at",
+        "start": 1010.32,
+        "duration": 5.68
+      },
+      {
+        "text": "the end, you can see basically what did",
+        "start": 1013,
+        "duration": 4.8
+      },
+      {
+        "text": "that have to do to win, and it shows you",
+        "start": 1016,
+        "duration": 3.36
+      },
+      {
+        "text": "why it's the best. So, for example, this",
+        "start": 1017.8,
+        "duration": 3.68
+      },
+      {
+        "text": "one here won, and it shows you each of",
+        "start": 1019.36,
+        "duration": 4.16
+      },
+      {
+        "text": "the individual answers it superseded.",
+        "start": 1021.48,
+        "duration": 3.76
+      },
+      {
+        "text": "So, basically the idea is if you ask an",
+        "start": 1023.52,
+        "duration": 3.559
+      },
+      {
+        "text": "AI the same question twice, you'll get",
+        "start": 1025.24,
+        "duration": 3.36
+      },
+      {
+        "text": "two different answers. So, if we ask it",
+        "start": 1027.079,
+        "duration": 3.721
+      },
+      {
+        "text": "100 times, what if you could actually",
+        "start": 1028.6,
+        "duration": 3.96
+      },
+      {
+        "text": "ask it 100 times and get the best",
+        "start": 1030.8,
+        "duration": 3.639
+      },
+      {
+        "text": "answer? That's essentially the question",
+        "start": 1032.56,
+        "duration": 4
+      },
+      {
+        "text": "this repo is saving you. Um it is",
+        "start": 1034.439,
+        "duration": 4
+      },
+      {
+        "text": "blowing up all over Instagram. I haven't",
+        "start": 1036.56,
+        "duration": 3.24
+      },
+      {
+        "text": "seen barely anybody talk about it on",
+        "start": 1038.439,
+        "duration": 3
+      },
+      {
+        "text": "YouTube, but it is a really powerful and",
+        "start": 1039.8,
+        "duration": 3.8
+      },
+      {
+        "text": "interesting way to get a fantastic",
+        "start": 1041.439,
+        "duration": 3.601
+      },
+      {
+        "text": "answer. And to use it, all you're going",
+        "start": 1043.6,
+        "duration": 3.64
+      },
+      {
+        "text": "to do is literally grab this guys, throw",
+        "start": 1045.04,
+        "duration": 3.76
+      },
+      {
+        "text": "it in, chat to Claude and say, \"I want",
+        "start": 1047.24,
+        "duration": 3.2
+      },
+      {
+        "text": "to use the arena skill. Um, use the",
+        "start": 1048.8,
+        "duration": 3.28
+      },
+      {
+        "text": "arena skill to answer this question.\"",
+        "start": 1050.44,
+        "duration": 3.2
+      },
+      {
+        "text": "And it'll go ahead and do that for you.",
+        "start": 1052.08,
+        "duration": 5.32
+      },
+      {
+        "text": "The TLDR is 100 answer and only one",
+        "start": 1053.64,
+        "duration": 5.76
+      },
+      {
+        "text": "can live. Only one can physically win.",
+        "start": 1057.4,
+        "duration": 3.16
+      },
+      {
+        "text": "So, do that for some of your more",
+        "start": 1059.4,
+        "duration": 2.88
+      },
+      {
+        "text": "interesting and challenging questions",
+        "start": 1060.56,
+        "duration": 3.04
+      },
+      {
+        "text": "and see exactly how that performance",
+        "start": 1062.28,
+        "duration": 3.2
+      },
+      {
+        "text": "goes. Now, number nine is a really",
+        "start": 1063.6,
+        "duration": 3.96
+      },
+      {
+        "text": "fascinating one. Level nine is a plugin",
+        "start": 1065.48,
+        "duration": 4
+      },
+      {
+        "text": "called Basically, it's a universal",
+        "start": 1067.56,
+        "duration": 3.8
+      },
+      {
+        "text": "modder by a guy called Rohan Remade,",
+        "start": 1069.48,
+        "duration": 4
+      },
+      {
+        "text": "which is cool. This one again is a early",
+        "start": 1071.36,
+        "duration": 3.56
+      },
+      {
+        "text": "stage. Again, I'm showing you what is",
+        "start": 1073.48,
+        "duration": 3.68
+      },
+      {
+        "text": "trending early before it becomes",
+        "start": 1074.92,
+        "duration": 3.48
+      },
+      {
+        "text": "mainstream as well as some of the",
+        "start": 1077.16,
+        "duration": 3.52
+      },
+      {
+        "text": "biggest ones here. And it lets you mod",
+        "start": 1078.4,
+        "duration": 4
+      },
+      {
+        "text": "any game. You may have seen these blow",
+        "start": 1080.68,
+        "duration": 3.8
+      },
+      {
+        "text": "up online essentially. It's pretty cool",
+        "start": 1082.4,
+        "duration": 4
+      },
+      {
+        "text": "and pretty interesting. And honestly,",
+        "start": 1084.48,
+        "duration": 3.68
+      },
+      {
+        "text": "I'd say it's quite a fun one to play",
+        "start": 1086.4,
+        "duration": 3.48
+      },
+      {
+        "text": "around with, which I think is a great",
+        "start": 1088.16,
+        "duration": 3.16
+      },
+      {
+        "text": "spot that, right? Because you can",
+        "start": 1089.88,
+        "duration": 2.88
+      },
+      {
+        "text": "basically mod anything that you",
+        "start": 1091.32,
+        "duration": 3.48
+      },
+      {
+        "text": "physically want to. So, again, there's",
+        "start": 1092.76,
+        "duration": 3.72
+      },
+      {
+        "text": "already been a lot of interesting sort",
+        "start": 1094.8,
+        "duration": 3.16
+      },
+      {
+        "text": "of like hype on this to some extent. The",
+        "start": 1096.48,
+        "duration": 3.32
+      },
+      {
+        "text": "myth doesn't take a million lines to",
+        "start": 1097.96,
+        "duration": 3.68
+      },
+      {
+        "text": "explain what this does. Essentially,",
+        "start": 1099.8,
+        "duration": 3.6
+      },
+      {
+        "text": "give it a game and it will create a mod.",
+        "start": 1101.64,
+        "duration": 3.08
+      },
+      {
+        "text": "And what it essentially should do is be",
+        "start": 1103.4,
+        "duration": 3.44
+      },
+      {
+        "text": "super creative. Remember, we're entering",
+        "start": 1104.72,
+        "duration": 4.92
+      },
+      {
+        "text": "now a brand new era in software where we",
+        "start": 1106.84,
+        "duration": 4.16
+      },
+      {
+        "text": "can deconstruct anything and we can",
+        "start": 1109.64,
+        "duration": 3.4
+      },
+      {
+        "text": "effectively build anything, which takes",
+        "start": 1111,
+        "duration": 4
+      },
+      {
+        "text": "us on to level 10. Now, level 10",
+        "start": 1113.04,
+        "duration": 3.4
+      },
+      {
+        "text": "essentially is something really",
+        "start": 1115,
+        "duration": 3.6
+      },
+      {
+        "text": "powerful. It's Cloudflare's security",
+        "start": 1116.44,
+        "duration": 4.8
+      },
+      {
+        "text": "audit skill. Now, security, guys, is",
+        "start": 1118.6,
+        "duration": 4.08
+      },
+      {
+        "text": "that boring topic no one wants to think",
+        "start": 1121.24,
+        "duration": 3.44
+      },
+      {
+        "text": "about. Thankfully, there is a skill here",
+        "start": 1122.68,
+        "duration": 4
+      },
+      {
+        "text": "which is cool. A coding agent skill that",
+        "start": 1124.68,
+        "duration": 4.2
+      },
+      {
+        "text": "turns your agent into a security audit",
+        "start": 1126.68,
+        "duration": 4.12
+      },
+      {
+        "text": "tool. It orchestrates isolated agents",
+        "start": 1128.88,
+        "duration": 3.96
+      },
+      {
+        "text": "through reconnaissance, coverage and",
+        "start": 1130.8,
+        "duration": 3.84
+      },
+      {
+        "text": "hunting, candidate validation,",
+        "start": 1132.84,
+        "duration": 3.16
+      },
+      {
+        "text": "structured output, and independent",
+        "start": 1134.64,
+        "duration": 3.08
+      },
+      {
+        "text": "record verification. I'm also going to",
+        "start": 1136,
+        "duration": 3.28
+      },
+      {
+        "text": "show you a bonus skill in 2 seconds,",
+        "start": 1137.72,
+        "duration": 2.56
+      },
+      {
+        "text": "which you're really going to make sure",
+        "start": 1139.28,
+        "duration": 2.52
+      },
+      {
+        "text": "that you need to use that, okay? Now,",
+        "start": 1140.28,
+        "duration": 3
+      },
+      {
+        "text": "it's very, very cool. You can run it",
+        "start": 1141.8,
+        "duration": 4.16
+      },
+      {
+        "text": "before you ship a client's app, anything",
+        "start": 1143.28,
+        "duration": 4.36
+      },
+      {
+        "text": "production ready that leaves. Run it",
+        "start": 1145.96,
+        "duration": 3
+      },
+      {
+        "text": "through this skill before you go ahead",
+        "start": 1147.64,
+        "duration": 2.88
+      },
+      {
+        "text": "and do that. And again, what it does, it",
+        "start": 1148.96,
+        "duration": 3.36
+      },
+      {
+        "text": "runs reconnaissance, coverage and",
+        "start": 1150.52,
+        "duration": 3.4
+      },
+      {
+        "text": "candidate evaluations, structured",
+        "start": 1152.32,
+        "duration": 3.32
+      },
+      {
+        "text": "output, independent record validation,",
+        "start": 1153.92,
+        "duration": 3.96
+      },
+      {
+        "text": "and target neutral reporting. You can",
+        "start": 1155.64,
+        "duration": 3.84
+      },
+      {
+        "text": "see all of the bells and whistles it",
+        "start": 1157.88,
+        "duration": 3.04
+      },
+      {
+        "text": "does down that. Now, the last one that I",
+        "start": 1159.48,
+        "duration": 2.52
+      },
+      {
+        "text": "want to talk to you about is something",
+        "start": 1160.92,
+        "duration": 3.04
+      },
+      {
+        "text": "called SlotMonster. I mentioned it on my",
+        "start": 1162,
+        "duration": 4.2
+      },
+      {
+        "text": "last video, but it is so effective, I",
+        "start": 1163.96,
+        "duration": 3.6
+      },
+      {
+        "text": "have to mention it. Not only will it",
+        "start": 1166.2,
+        "duration": 3.36
+      },
+      {
+        "text": "take any text that you've got and make",
+        "start": 1167.56,
+        "duration": 3.48
+      },
+      {
+        "text": "it sound like it's been written by a",
+        "start": 1169.56,
+        "duration": 3.76
+      },
+      {
+        "text": "human, it's also trained on basically",
+        "start": 1171.04,
+        "duration": 4.12
+      },
+      {
+        "text": "marketing and sales practices that",
+        "start": 1173.32,
+        "duration": 3.8
+      },
+      {
+        "text": "actually convert. I use these examples a",
+        "start": 1175.16,
+        "duration": 3.92
+      },
+      {
+        "text": "lot, but I cannot underscore just enough",
+        "start": 1177.12,
+        "duration": 3.84
+      },
+      {
+        "text": "how powerful this is. Look at what it",
+        "start": 1179.08,
+        "duration": 3.4
+      },
+      {
+        "text": "did. So, instead of saying \"trusted,",
+        "start": 1180.96,
+        "duration": 3.44
+      },
+      {
+        "text": "reliable, and built to last\", that",
+        "start": 1182.48,
+        "duration": 4.52
+      },
+      {
+        "text": "becomes \"six nails per shingle, every",
+        "start": 1184.4,
+        "duration": 4.36
+      },
+      {
+        "text": "shingle. We leverage industry-leading",
+        "start": 1187,
+        "duration": 3.44
+      },
+      {
+        "text": "materials to deliver unparalleled",
+        "start": 1188.76,
+        "duration": 4.08
+      },
+      {
+        "text": "protection.\" We source materials from",
+        "start": 1190.44,
+        "duration": 5.08
+      },
+      {
+        "text": "manufacturers who test for wind, hail,",
+        "start": 1192.84,
+        "duration": 4.48
+      },
+      {
+        "text": "and sun. And that's how do you use these",
+        "start": 1195.52,
+        "duration": 3.64
+      },
+      {
+        "text": "skills to build something super",
+        "start": 1197.32,
+        "duration": 3.64
+      },
+      {
+        "text": "productive that's going to save you time",
+        "start": 1199.16,
+        "duration": 2.88
+      },
+      {
+        "text": "and make you more money? Well, I'll show",
+        "start": 1200.96,
+        "duration": 2.96
+      },
+      {
+        "text": "you how to do that in an Agentic",
+        "start": 1202.04,
+        "duration": 4.24
+      },
+      {
+        "text": "Operating System in this video right",
+        "start": 1203.92,
+        "duration": 4.64
+      },
+      {
+        "text": "here.",
+        "start": 1206.28,
+        "duration": 2.28
+      }
+    ]
+  },
+  "comments_count_scraped": 26,
+  "comments": [
+    {
+      "cid": "UgxhjJRN3I1nUBFP9ml4AaABAg",
+      "author": "@Itssssss_Jack",
+      "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+      "text": "📈 Unlock Agentic OS: https://bit.ly/4kol0y5\n\nEvery repo from this video 👇\n\n1. 🎨 PhotoCraft: https://github.com/storytold/photocraft\n2. 🧩 Compositor: https://github.com/robbietilton/Compositor\n3. 🌐 Ego (lite): https://bit.ly/4B8sZYn\n4. 🔍 Rea: https://github.com/morluto/rea\n5. ✨ 21st.dev: https://bit.ly/4dC4Or8\n6. 🧭 Find Skills: https://github.com/vercel-labs/skills\n7. 🐋 Orca: https://github.com/stablyai/orca\nBonus: ⚡ Zapier MCP: https://bit.ly/3WlGNhZ\n1. ⚔️ Arena Skill: https://github.com/Jakeschincariol/arena-skill\n2. 🎮 Universal Modder: https://github.com/rehan-remade/universal-modder\n3. 🛡️ Cloudflare Security Audit: https://github.com/cloudflare/security-audit-skill\nBonus: 🧹 SlopMonster: https://github.com/ItsssssJack/SlopMonster\n\n🔥 Free Month of Glaido: https://get.glaido.com/jack",
+      "time": "3 days ago (edited)",
+      "votes": 9,
+      "replies": []
+    },
+    {
+      "cid": "Ugwb54DTpHXzpPxbX9N4AaABAg",
+      "author": "@WPSoul",
+      "author_thumbnail": "https://yt3.ggpht.com/eaQ-egoSZR_cv6KsxcjuNQ1Zh9OeEvIZd7-xUig7ow4bnK0yoAaFgXKtn_tQn9JvCscWSEBr=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Adobe has tons of alternatives even in before AI era. Business will continue to use them because nobody takes seriously vibe coded copy.",
+      "time": "17 hours ago",
+      "votes": 0,
+      "replies": []
+    },
+    {
+      "cid": "UgwXJWs-VYX7CpTl8Bt4AaABAg",
+      "author": "@aiplainspoken",
+      "author_thumbnail": "https://yt3.ggpht.com/FPP_lO9ReOyc2os734Woc11lxGcWO_0zkuMAcK4fc_kYFF25ocIbUEBU8OMS4ac3ALQZKxjVRw=s88-c-k-c0x00ffffff-no-rj",
+      "text": "I’d love to spend less time jumping between apps and repeating the same tasks every day. The real win is an agent that saves time without creating more work to check its output😊",
+      "time": "22 hours ago",
+      "votes": 0,
+      "replies": []
+    },
+    {
+      "cid": "UgzWYiDpfC27on4xWmp4AaABAg",
+      "author": "@AntonyWilson-h8d",
+      "author_thumbnail": "https://yt3.ggpht.com/aVpOg_CRvmZHu6DIGL3oZVWHlBGBoXaOdXOqpfzmw2LMtLvjeVfjUs_6c3qrV8Hucbw18Cgh7Hc=s88-c-k-c0x00ffffff-no-rj",
+      "text": "The Pattern They Missed by Ethan Caldwell. IYKYK.",
+      "time": "1 day ago",
+      "votes": 0,
+      "replies": []
+    },
+    {
+      "cid": "Ugx705Y9xsyWTzwPN514AaABAg",
+      "author": "@KoolFaceFashions",
+      "author_thumbnail": "https://yt3.ggpht.com/pVUWJYiyYGAm4ykWHSdxUyUtr4HC3lrNY0FcctBU5qtmo8P18mIPTDIDRG4CJklBOL4WwMeTvjE=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Value for 💰",
+      "time": "1 day ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "Ugx705Y9xsyWTzwPN514AaABAg.AbuVV56sQ2gAbwU32q_L2-",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Glad you're finding the value in these, brother! 🙏",
+          "time": "23 hours ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "Ugx-aJcMawl8jpmFS5B4AaABAg",
+      "author": "@worldoftech6451",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kIf0PlGxS9LwKxppQVov5u0hFtgPeNCW-rOh6gNvvnKpT4SStrhyfLIw9gMGgjS8B-Hw=s88-c-k-c0x00ffffff-no-rj",
+      "text": "How do you install these into Claude? I'm trying to add the PhotoCraft repository into Claude. I'm getting the error: This repository isn’t a marketplace — no manifest found at .claude-plugin/marketplace.json. Make sure you’re adding the marketplace repository, not a plugin or an unrelated repository.",
+      "time": "2 days ago",
+      "votes": 0,
+      "replies": []
+    },
+    {
+      "cid": "Ugz6U3TVoQ4V7dnW_V94AaABAg",
+      "author": "@johnr807",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kQBjU6jEW0GsMJeTqAZtuT0as2G29hpKTrY_Ufwsi1yto=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Does PhotoCraft work with open weight AI models?",
+      "time": "2 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "Ugz6U3TVoQ4V7dnW_V94AaABAg.AbsvXFmpkYCAbtz2n2MCAl",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Technically, bro, you can use any AI with any app yourself. Just use computer control.",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        },
+        {
+          "cid": "Ugz6U3TVoQ4V7dnW_V94AaABAg.AbsvXFmpkYCAbuh8Zk1xfP",
+          "author": "@heska9687",
+          "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m2s7giIp50Sj11wAtuWvTVtCsLGdQ3MZYGHIoIzN3m5j0jU_Ih9WuIE6Ndg51XKUdFJg=s88-c-k-c0x00ffffff-no-rj",
+          "text": "work with muse",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwZRL3f140SoZxJBKJ4AaABAg",
+      "author": "@ElishaAbolarin-o4r",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kJUedU2WqwDpcrsmQAb-qEVpLxsjEuxfEMLyaoJb0l-nhb-fCqU55-F6mWWnxz_ZaYDQ=s88-c-k-c0x00ffffff-no-rj",
+      "text": "The biggest thing Pathway to Market Mastery by Evan Miller gave me was a new perspective. I realized how many beliefs I had simply inherited from other people without questioning them. After applying the ideas from Evan, my work got increased by over 38% in plus, and I finally felt that everything was becoming achievable. It changed the way I think from the ground up.",
+      "time": "2 days ago",
+      "votes": 0,
+      "replies": []
+    },
+    {
+      "cid": "UgxLjGflpqBLjJ29Gyh4AaABAg",
+      "author": "@ElishaAbolarin-o4r",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kJUedU2WqwDpcrsmQAb-qEVpLxsjEuxfEMLyaoJb0l-nhb-fCqU55-F6mWWnxz_ZaYDQ=s88-c-k-c0x00ffffff-no-rj",
+      "text": "The biggest thing Pathway to Market Mastery by Evan Miller gave me was a new perspective. I realized how many beliefs I had simply inherited from other people without questioning them. After applying the ideas from Evan, my work got increased by over 38% in plus, and I finally felt that everything was becoming achievable. It changed the way I think from the ground up.",
+      "time": "2 days ago",
+      "votes": 1,
+      "replies": []
+    },
+    {
+      "cid": "Ugyz8KcWVvFYgntuXCl4AaABAg",
+      "author": "@БогданХроменков-ж4з",
+      "author_thumbnail": "https://yt3.ggpht.com/V5yd3TUYMNtlJ5yY9r62ZyaDPymUdDHptLXdTo0peEfOmmeN9gnAL_kh33xVsFi4UwCt1w96=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Could you make a video about projects in Cloud Code?",
+      "time": "2 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "Ugyz8KcWVvFYgntuXCl4AaABAg.AbsMz5ExUoBAbtzCV8xQMN",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Sure, what would you like to learn in particular?",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwY4fcdRxr2y7_cpcp4AaABAg",
+      "author": "@teusz_07",
+      "author_thumbnail": "https://yt3.ggpht.com/Flq4a21KtFYYqYb7DN0JLJC-0VjnXFbb2QBGiq2IyoRpwiBO_v1-4JreW2IfDuEw-wvWFen2hZA=s88-c-k-c0x00ffffff-no-rj",
+      "text": "What is the name of the tool/app he uses for transcribing his voice anywhere on his pc?",
+      "time": "2 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "UgwY4fcdRxr2y7_cpcp4AaABAg.AbsCC4rgq57AbtzVxvVK3N",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "This will get you 1  free month of Glaido 👉 https://get.glaido.com/jack",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwH6zLkXHQLDzGaMr14AaABAg",
+      "author": "@JanTrautwein",
+      "author_thumbnail": "https://yt3.ggpht.com/7OCFWJP8-wOmA2RN3cpW0RkP72cK4DYsqmz8iyN4oPot89nijerK3xlWzyFZGibG7IJed8BXqQ=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Why zapier and not composio?",
+      "time": "2 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "UgwH6zLkXHQLDzGaMr14AaABAg.AbsA1k9O1S7AbtzkiGlALx",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Bigger library, better UI, better error handling etc..",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "Ugx2XVuMvY0u3DDcZb54AaABAg",
+      "author": "@viyan-hari",
+      "author_thumbnail": "https://yt3.ggpht.com/b9vfazEGwrhT_f7RuJNPMv2Sg6SlKRbaSP5EdGpEI5GlL3g7vHYjiOTquTRHWc82Ks9QiMgOonc=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Nice",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "Ugx2XVuMvY0u3DDcZb54AaABAg.AbrFd8TF8MPAbrqooTx5Sm",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Glad you enjoyed it, brother! 💪",
+          "time": "2 days ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwDNgXcsc_juURqEiJ4AaABAg",
+      "author": "@RandallJ05",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nkWTB0489TCqqX4mTIbhjtYykwQa3CaDsbSSkiG5g=s88-c-k-c0x00ffffff-no-rj",
+      "text": "There’s been alot of github repos - Interested to see which ones get the most use from you or your community.  Im loving all these 🔥githubs but a little overwhelmed",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "UgwDNgXcsc_juURqEiJ4AaABAg.AbrDpHZWC-sAbrqDGPIrxI",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "I feel you, brother! Jame take it one repo at a time and don't stress about trying to use them all at once! 🙏",
+          "time": "2 days ago",
+          "votes": 1,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwWVXbO38mNy4_pz894AaABAg",
+      "author": "@ReefMimic",
+      "author_thumbnail": "https://yt3.ggpht.com/5ZEM-griqNO5He64V0C_06AkiOJLbqB3nEFHvd2KmAzenXjjABJSrGcNu0XYxKGEnn_Kqg1MFg=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Download it before it’s deleted!",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "UgwWVXbO38mNy4_pz894AaABAg.AbrBa_roV5rAbtzL7OKPYF",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "We are in a new era now.",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "Ugz0qyUwCa5_TY2VXfZ4AaABAg",
+      "author": "@abrxrbuilds",
+      "author_thumbnail": "https://yt3.ggpht.com/Hg-Ea61i3-NoGxpUjblY7BmQX2vRfcNdNGp0T-Jz9B0k78j3jS-bzxWTismQ3vQivo39avLTTA=s88-c-k-c0x00ffffff-no-rj",
+      "text": "hey man love your videos, always very detailed. that said, i have been working on a free alternative to wispr flow, it has more stuff like jarvis style computer automation and more. what's it gonna take to get a genuine review on your channel? :') an expert review like your would mean a lot, that said, i am primarily releasin it for window ( we windows users are hella unappreciated haha always getting support later)",
+      "time": "3 days ago",
+      "votes": 1,
+      "replies": [
+        {
+          "cid": "Ugz0qyUwCa5_TY2VXfZ4AaABAg.AbqxjMIEr3xAbrqIkCHoXJ",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "I love that bro. Will you know that I created Glaido, a speech-to-text startup that is the 10x Whispr flow? That said, super happy to take a look at it for you bro!\n\nThis will get you 1  free month of Glaido 👉 https://get.glaido.com/jack",
+          "time": "2 days ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwSlWe4wR4AVONiV5h4AaABAg",
+      "author": "@Xeronimo74",
+      "author_thumbnail": "https://yt3.ggpht.com/tH2Vkb0Dqkru02sTjA_p6jou2N3lVyx3r6n2fgXJHtMX2ZYrqS9F0f4S1kXxDIbNJO78Krxm=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Apparently those craft apps are still quite buggy though if one really works with them",
+      "time": "3 days ago",
+      "votes": 1,
+      "replies": [
+        {
+          "cid": "UgwSlWe4wR4AVONiV5h4AaABAg.Abqv7MnW1-0AbtzhLCh_5A",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Not perfect, but certainly the worst they will ever be.",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwRQjzrmzw6zjuHO794AaABAg",
+      "author": "@Xeronimo74",
+      "author_thumbnail": "https://yt3.ggpht.com/tH2Vkb0Dqkru02sTjA_p6jou2N3lVyx3r6n2fgXJHtMX2ZYrqS9F0f4S1kXxDIbNJO78Krxm=s88-c-k-c0x00ffffff-no-rj",
+      "text": "What about security when installing these??",
+      "time": "3 days ago",
+      "votes": 6,
+      "replies": [
+        {
+          "cid": "UgwRQjzrmzw6zjuHO794AaABAg.AbqucSpaQ_9Abu-Tol9BZo",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Always read through and check any repo before you install it.",
+          "time": "1 day ago",
+          "votes": 1,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgxRH7RKZBbYA_plwmF4AaABAg",
+      "author": "@florianrolke",
+      "author_thumbnail": "https://yt3.ggpht.com/yU0ka9TVr79yCI45makMihAAZG6MYohNWBjQ8Jz4VCCyIw3_ApkKxEIHY4Z0pD_606pzLBns7g=s88-c-k-c0x00ffffff-no-rj",
+      "text": "It will be very exciting to see how the open source Adobe replacements are handling actual Premiere Pro templates - that is the use case I am most interested in. Awesome video again!",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "UgxRH7RKZBbYA_plwmF4AaABAg.Abqq0fF2i7gAbrqE8H-E1a",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Glad you enjoyed it, and 100% 💪",
+          "time": "2 days ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwagdaDVQPjaTgERgh4AaABAg",
+      "author": "@hamishahern2055",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mfCeZWlwDi0DqS_wV-bGiJZrL-JA2lWirG4_lM2CxFb5k=s88-c-k-c0x00ffffff-no-rj",
+      "text": "well done.  subscribed.",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": [
+        {
+          "cid": "UgwagdaDVQPjaTgERgh4AaABAg.AbqbrQsv0V_AbrqrAcoI4v",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "my man 🙏",
+          "time": "2 days ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "Ugy5ZN3ha9-pTCJoPD14AaABAg",
+      "author": "@rickdarknessrn",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nTzifXC6bGdXWZw7vu-P2X_Fb7qK5WHD2s6QRVPEpGCQ=s88-c-k-c0x00ffffff-no-rj",
+      "text": "My Hermes agent going to become crazy with this repos, thanks for sharing",
+      "time": "3 days ago",
+      "votes": 1,
+      "replies": [
+        {
+          "cid": "Ugy5ZN3ha9-pTCJoPD14AaABAg.AbqYzMr6bd4AbrqpkdxVKN",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "haha glad to hear it!",
+          "time": "2 days ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwxGkBqZOdFOC8dh214AaABAg",
+      "author": "@2nice79",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lz_ZsZyCqr3TRqwjTbzBNgOXxszJ16X1JXH2BOrYffvj4=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Its great to see these big companies that have been squeezing end users for so long get pressured, however i wish this type of thing would show up in the gig economy. For instance,  I wish someone or a team  would  undercut all the food ordering and delivery apps that are squeezing local businesses and workers that are having a hard enough time how it is with inflation and labor costs. Anyone want in on this?",
+      "time": "3 days ago (edited)",
+      "votes": 16,
+      "replies": [
+        {
+          "cid": "UgwxGkBqZOdFOC8dh214AaABAg.AbqR0wk9yoGAbrrKB1PF4r",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "Interesting idea. That is absolutely possible, but you have to overcome the next bottleneck, which is going to be onboarding of businesses and getting them to sign up to things. The technology part is essentially there now.",
+          "time": "2 days ago",
+          "votes": 2,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgzwZXktIJkcsEqoD2t4AaABAg",
+      "author": "@ryyryy7423",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n4ixr48ecGz1FEIx5SUy47GUDdWktWkai05gcOK6U=s88-c-k-c0x00ffffff-no-rj",
+      "text": "21st dev is not even free....",
+      "time": "3 days ago",
+      "votes": 3,
+      "replies": [
+        {
+          "cid": "UgzwZXktIJkcsEqoD2t4AaABAg.AbqM-4xWV_eAbu-wHHXi0g",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "There are some features that you can get for free but for all of the features, yeah; you need a paid sub with that one. I'm finding I use this a lot.",
+          "time": "1 day ago",
+          "votes": 0,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "Ugyyuvs1s5v41BLIrwF4AaABAg",
+      "author": "@drewski6843",
+      "author_thumbnail": "https://yt3.ggpht.com/ZCuyGyZFpHm0FSDxUhbofWjKq6MUFphY2nN337F6qYLHSmUBrzW98Q-2h7l5a8hRfXwfpeT4KHQ=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Dude, im trying to get something for ai art with no slop and reverse engineer artists styles and make it into my own. \nHave any thoughts about this jack?\nI also have my own llm that I use, private as you may say.\nThanks dude.",
+      "time": "3 days ago",
+      "votes": 2,
+      "replies": [
+        {
+          "cid": "Ugyyuvs1s5v41BLIrwF4AaABAg.AbqHvLjSgUFAbrrchqwDfe",
+          "author": "@Itssssss_Jack",
+          "author_thumbnail": "https://yt3.ggpht.com/DNqB1hIwioWT2PYkLGHuFtnfUnx11uE-35XmQqOXJBwyy7sZuBUiTQRySnHoCGP9Wj-0GNGaOQ=s88-c-k-c0x00ffffff-no-rj",
+          "text": "That is a great idea. I might do a video on that if you think that would be helpful or interesting!",
+          "time": "2 days ago",
+          "votes": 1,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "cid": "UgwRTKuMH9ItZDJ2ejd4AaABAg",
+      "author": "@theaerogr",
+      "author_thumbnail": "https://yt3.ggpht.com/4zwjBFvhjOFR9OjVPYvfFTiyoWcn0bnOkVg9aYUjwoRGUrxByV-Nkg62gQeUxH5_glGI-NNCRg=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Btw when you work on a similar project, you can just claude to take a look at the codebases of others, take inspiration and improve your app.\n\nI was making my own Video Editing software, and claude found some interesting improvements to take from their codebase into mine. \n\n\nOpen-source and cross sharing of code between projects is gonna be amazing. Especially if their based on the same coding language, which is usually rust.",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": []
+    },
+    {
+      "cid": "Ugw-xNA-LuUHXY0pG-d4AaABAg",
+      "author": "@Jodevy",
+      "author_thumbnail": "https://yt3.ggpht.com/PhBufx2d-RwH7Xhxw2-dsRMItQUKCJk1QgeZ49sQaSwgYjUOpYexTaoBKh08LIT7Kmaz1vTI=s88-c-k-c0x00ffffff-no-rj",
+      "text": "Well REA is just an mcp that gives the ai agent most of all popular apps that are out there",
+      "time": "3 days ago",
+      "votes": 0,
+      "replies": []
+    }
+  ],
+  "scraped_at": "2026-10-15 15:31:19"
+}

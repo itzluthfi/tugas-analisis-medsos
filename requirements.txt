@@ -1,0 +1,15 @@
+# Core Scraping Packages
+yt-dlp>=2024.1.0
+youtube-transcript-api>=0.6.2
+youtube-comment-downloader>=0.1.72
+twikit>=2.2.0
+
+# Audio Transcription (Opsional jika video tidak punya subtitle bawaan)
+openai-whisper
+soundfile
+
+# Data Processing & Storage
+pandas>=2.0.0
+openpyxl>=3.1.0
+tqdm>=4.66.0
+pydantic>=2.0.0

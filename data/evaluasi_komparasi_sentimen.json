@@ -1,0 +1,415 @@
+{
+  "dataset_info": {
+    "total_samples": 617,
+    "train_samples": 493,
+    "test_samples": 124,
+    "platforms": {
+      "YouTube": 617
+    },
+    "sentiment_distribution": {
+      "Negatif": 393,
+      "Netral": 117,
+      "Positif": 107
+    }
+  },
+  "evaluation_summary": [
+    {
+      "Paradigma": "Lexicon-Based",
+      "Metode": "InSet Lexicon",
+      "Akurasi": "99.19%",
+      "Precision (Macro)": "98.67%",
+      "Recall (Macro)": "98.41%",
+      "F1-Score (Macro)": "98.51%",
+      "F1-Score (Weighted)": "99.19%"
+    },
+    {
+      "Paradigma": "Distance Metric",
+      "Metode": "Cosine Similarity",
+      "Akurasi": "67.74%",
+      "Precision (Macro)": "58.03%",
+      "Recall (Macro)": "59.67%",
+      "F1-Score (Macro)": "58.73%",
+      "F1-Score (Weighted)": "68.39%"
+    },
+    {
+      "Paradigma": "Machine Learning (Baseline)",
+      "Metode": "Linear SVM",
+      "Akurasi": "70.16%",
+      "Precision (Macro)": "64.66%",
+      "Recall (Macro)": "49.50%",
+      "F1-Score (Macro)": "51.74%",
+      "F1-Score (Weighted)": "65.74%"
+    },
+    {
+      "Paradigma": "Machine Learning (Hybrid)",
+      "Metode": "Hybrid SVM (TF-IDF + InSet)",
+      "Akurasi": "92.74%",
+      "Precision (Macro)": "90.15%",
+      "Recall (Macro)": "87.30%",
+      "F1-Score (Macro)": "87.71%",
+      "F1-Score (Weighted)": "92.36%"
+    },
+    {
+      "Paradigma": "Deep Learning",
+      "Metode": "Neural BiLSTM (Attention)",
+      "Akurasi": "64.52%",
+      "Precision (Macro)": "58.42%",
+      "Recall (Macro)": "63.78%",
+      "F1-Score (Macro)": "58.58%",
+      "F1-Score (Weighted)": "66.48%"
+    },
+    {
+      "Paradigma": "X-Shot Learning",
+      "Metode": "X-Shot Reasoning (CoT)",
+      "Akurasi": "44.35%",
+      "Precision (Macro)": "73.98%",
+      "Recall (Macro)": "48.94%",
+      "F1-Score (Macro)": "39.40%",
+      "F1-Score (Weighted)": "45.88%"
+    }
+  ],
+  "detailed_metrics": {
+    "inset_lexicon": {
+      "method": "InSet Lexicon",
+      "accuracy": 0.9919,
+      "macro_avg": {
+        "precision": 0.9867,
+        "recall": 0.9841,
+        "f1_score": 0.9851
+      },
+      "weighted_avg": {
+        "precision": 0.9923,
+        "recall": 0.9919,
+        "f1_score": 0.9919
+      },
+      "per_class": {
+        "Negatif": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 79
+        },
+        "Netral": {
+          "precision": 0.96,
+          "recall": 1.0,
+          "f1_score": 0.9796,
+          "support": 24
+        },
+        "Positif": {
+          "precision": 1.0,
+          "recall": 0.9524,
+          "f1_score": 0.9756,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          79,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          1,
+          20
+        ]
+      ],
+      "labels": [
+        "Negatif",
+        "Netral",
+        "Positif"
+      ],
+      "total_samples": 124
+    },
+    "cosine_similarity": {
+      "method": "Cosine Similarity",
+      "accuracy": 0.6774,
+      "macro_avg": {
+        "precision": 0.5803,
+        "recall": 0.5967,
+        "f1_score": 0.5873
+      },
+      "weighted_avg": {
+        "precision": 0.6925,
+        "recall": 0.6774,
+        "f1_score": 0.6839
+      },
+      "per_class": {
+        "Negatif": {
+          "precision": 0.8243,
+          "recall": 0.7722,
+          "f1_score": 0.7974,
+          "support": 79
+        },
+        "Netral": {
+          "precision": 0.5,
+          "recall": 0.5417,
+          "f1_score": 0.52,
+          "support": 24
+        },
+        "Positif": {
+          "precision": 0.4167,
+          "recall": 0.4762,
+          "f1_score": 0.4444,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          61,
+          8,
+          10
+        ],
+        [
+          7,
+          13,
+          4
+        ],
+        [
+          6,
+          5,
+          10
+        ]
+      ],
+      "labels": [
+        "Negatif",
+        "Netral",
+        "Positif"
+      ],
+      "total_samples": 124
+    },
+    "linear_svm": {
+      "method": "Linear SVM",
+      "accuracy": 0.7016,
+      "macro_avg": {
+        "precision": 0.6466,
+        "recall": 0.495,
+        "f1_score": 0.5174
+      },
+      "weighted_avg": {
+        "precision": 0.6872,
+        "recall": 0.7016,
+        "f1_score": 0.6574
+      },
+      "per_class": {
+        "Negatif": {
+          "precision": 0.7282,
+          "recall": 0.9494,
+          "f1_score": 0.8242,
+          "support": 79
+        },
+        "Netral": {
+          "precision": 0.75,
+          "recall": 0.25,
+          "f1_score": 0.375,
+          "support": 24
+        },
+        "Positif": {
+          "precision": 0.4615,
+          "recall": 0.2857,
+          "f1_score": 0.3529,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          75,
+          0,
+          4
+        ],
+        [
+          15,
+          6,
+          3
+        ],
+        [
+          13,
+          2,
+          6
+        ]
+      ],
+      "labels": [
+        "Negatif",
+        "Netral",
+        "Positif"
+      ],
+      "total_samples": 124
+    },
+    "hybrid_svm": {
+      "method": "Hybrid SVM (TF-IDF + InSet)",
+      "accuracy": 0.9274,
+      "macro_avg": {
+        "precision": 0.9015,
+        "recall": 0.873,
+        "f1_score": 0.8771
+      },
+      "weighted_avg": {
+        "precision": 0.9314,
+        "recall": 0.9274,
+        "f1_score": 0.9236
+      },
+      "per_class": {
+        "Negatif": {
+          "precision": 0.9634,
+          "recall": 1.0,
+          "f1_score": 0.9814,
+          "support": 79
+        },
+        "Netral": {
+          "precision": 0.9412,
+          "recall": 0.6667,
+          "f1_score": 0.7805,
+          "support": 24
+        },
+        "Positif": {
+          "precision": 0.8,
+          "recall": 0.9524,
+          "f1_score": 0.8696,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          79,
+          0,
+          0
+        ],
+        [
+          3,
+          16,
+          5
+        ],
+        [
+          0,
+          1,
+          20
+        ]
+      ],
+      "labels": [
+        "Negatif",
+        "Netral",
+        "Positif"
+      ],
+      "total_samples": 124
+    },
+    "neural_bilstm": {
+      "method": "Neural BiLSTM (Attention)",
+      "accuracy": 0.6452,
+      "macro_avg": {
+        "precision": 0.5842,
+        "recall": 0.6378,
+        "f1_score": 0.5858
+      },
+      "weighted_avg": {
+        "precision": 0.7335,
+        "recall": 0.6452,
+        "f1_score": 0.6648
+      },
+      "per_class": {
+        "Negatif": {
+          "precision": 0.9107,
+          "recall": 0.6456,
+          "f1_score": 0.7556,
+          "support": 79
+        },
+        "Netral": {
+          "precision": 0.4419,
+          "recall": 0.7917,
+          "f1_score": 0.5672,
+          "support": 24
+        },
+        "Positif": {
+          "precision": 0.4,
+          "recall": 0.4762,
+          "f1_score": 0.4348,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          51,
+          16,
+          12
+        ],
+        [
+          2,
+          19,
+          3
+        ],
+        [
+          3,
+          8,
+          10
+        ]
+      ],
+      "labels": [
+        "Negatif",
+        "Netral",
+        "Positif"
+      ],
+      "total_samples": 124
+    },
+    "xshot_reasoning": {
+      "method": "X-Shot Reasoning (CoT)",
+      "accuracy": 0.4435,
+      "macro_avg": {
+        "precision": 0.7398,
+        "recall": 0.4894,
+        "f1_score": 0.394
+      },
+      "weighted_avg": {
+        "precision": 0.8341,
+        "recall": 0.4435,
+        "f1_score": 0.4588
+      },
+      "per_class": {
+        "Negatif": {
+          "precision": 0.9667,
+          "recall": 0.3671,
+          "f1_score": 0.5321,
+          "support": 79
+        },
+        "Netral": {
+          "precision": 0.2527,
+          "recall": 0.9583,
+          "f1_score": 0.4,
+          "support": 24
+        },
+        "Positif": {
+          "precision": 1.0,
+          "recall": 0.1429,
+          "f1_score": 0.25,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          29,
+          50,
+          0
+        ],
+        [
+          1,
+          23,
+          0
+        ],
+        [
+          0,
+          18,
+          3
+        ]
+      ],
+      "labels": [
+        "Negatif",
+        "Netral",
+        "Positif"
+      ],
+      "total_samples": 124
+    }
+  }
+}
