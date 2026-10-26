@@ -58,7 +58,11 @@ class TextPreprocessor:
             "bener": "benar", "bner": "benar", "susahh": "susah", "susahhh": "susah",
             "parahh": "parah", "parahhh": "parah", "capek": "lelah", "cape": "lelah",
             "nyerah": "menyerah", "pasrah": "menyerah", "bingung": "bingung",
-            "pt": "perusahaan", "pabrik": "pabrik", "pemerintah": "pemerintah"
+            "pt": "perusahaan", "pabrik": "pabrik", "pemerintah": "pemerintah",
+            "antri": "antre", "ngantri": "antre", "ngantre": "antre", "ngular": "mengular",
+            "abis": "habis", "habiss": "habis", "bensin": "bahan bakar", "pertalit": "pertalite",
+            "pertamak": "pertamax", "spbu": "stasiun pengisian bahan bakar", "pom": "stasiun pengisian bahan bakar",
+            "nimbun": "timbun", "ngecer": "ecer", "bahlil": "menteri"
         }
         self.slang_map.update(custom_maps)
 
@@ -73,7 +77,8 @@ class TextPreprocessor:
         }
         self.sentiment_preserves = {
             "sangat", "amat", "terlalu", "parah", "krisis", "sulit", "susah", "gagal",
-            "buruk", "rusak", "rugi", "miskin", "kecewa", "menyerah", "berat"
+            "buruk", "rusak", "rugi", "miskin", "kecewa", "menyerah", "berat",
+            "langka", "kosong", "habis", "antre", "antri", "menjerit", "mogok", "sengsara", "lancar", "aman"
         }
         
         # Hapus kata negasi & kata kunci dari set stopword
@@ -172,9 +177,9 @@ class TextPreprocessor:
         4. Stopword Removal (Negation-Preserving dengan audit kata terhapus)
         5. Stemming Sastrawi (dengan audit perubahan kata berimbuhan)
         """
-        cleaned = self.clean_text(text)
-        folded = self.case_folding(cleaned)
-        raw_tokens = self.tokenize(folded)
+        case_folded_raw = self.case_folding(text)
+        cleaned = self.clean_text(case_folded_raw)
+        raw_tokens = self.tokenize(cleaned)
         
         normalized_tokens, slang_audits = self.normalize_slang_with_audit(raw_tokens)
         no_stop_tokens, removed_stops = self.remove_stopwords_with_audit(normalized_tokens)
@@ -184,7 +189,8 @@ class TextPreprocessor:
         
         return {
             "original_text": text,
-            "case_folded": folded,
+            "case_folded": case_folded_raw,
+            "cleaned_text": cleaned,
             "tokens_raw": raw_tokens,
             "tokens_normalized": normalized_tokens,
             "tokens_no_stopwords": no_stop_tokens,

@@ -12,15 +12,19 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from pydantic import BaseModel
 
 from scrapers.youtube_scraper import YouTubeScraper
-from scrapers.twitter_scraper import TwitterScraper
 from scrapers.instagram_scraper import InstagramScraper
 from pipeline.service import SentimentResearchService
+
+try:
+    from scrapers.twitter_scraper import TwitterScraper
+    tw_scraper = TwitterScraper(output_dir="data/twitter")
+except Exception:
+    tw_scraper = None
 
 app = FastAPI(title="Media Social Analyzer & Scraper Hub")
 
 # Inisialisasi Scrapers
 yt_scraper = YouTubeScraper(output_dir="data/youtube")
-tw_scraper = TwitterScraper(output_dir="data/twitter")
 ig_scraper = InstagramScraper(output_dir="data/instagram")
 
 # Ensure Data Directories
@@ -453,28 +457,60 @@ def predict_custom_sentiment(req: SentimentPredictRequest):
     return srv.predict_text(req.text)
 
 @app.get("/api/sentiment/export/dataset")
-def export_sentiment_dataset(format: str = "xlsx"):
-    """Mengunduh dataset preprocessed lengkap dalam format Excel atau CSV."""
-    if format == "xlsx":
-        fpath = "data/dataset_ketenagakerjaan_preprocessed.xlsx"
-        if not os.path.exists(fpath):
-            raise HTTPException(status_code=404, detail="File dataset belum tersedia.")
-        return FileResponse(
-            fpath,
-            filename="Dataset_Ketenagakerjaan_Preprocessed.xlsx",
-            media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-        )
-    elif format == "csv":
-        fpath = "data/dataset_ketenagakerjaan_preprocessed.csv"
-        if not os.path.exists(fpath):
-            raise HTTPException(status_code=404, detail="File dataset belum tersedia.")
-        return FileResponse(
-            fpath,
-            filename="Dataset_Ketenagakerjaan_Preprocessed.csv",
-            media_type="text/csv"
-        )
+def export_sentiment_dataset(format: str = "xlsx", platform: str = "all"):
+    """Mengunduh dataset preprocessed lengkap dalam format Excel atau CSV (bisa difilter platform: all, youtube, instagram)."""
+    p_lower = platform.lower()
+    if p_lower == "youtube":
+        suffix = "_youtube"
+        name_tag = "YouTube"
+    elif p_lower == "instagram":
+        suffix = "_instagram"
+        name_tag = "Instagram"
     else:
-        raise HTTPException(status_code=400, detail="Format tidak didukung. Pilih xlsx atau csv.")
+        suffix = ""
+        name_tag = "Combined"
+
+    ext = "xlsx" if format == "xlsx" else "csv"
+    fpath = f"data/dataset_bbm_preprocessed{suffix}.{ext}"
+    filename = f"Dataset_BBM_Preprocessed_{name_tag}.{ext}"
+    
+    if not os.path.exists(fpath):
+        fpath = f"data/dataset_bbm_preprocessed.{ext}"
+        filename = f"Dataset_BBM_Preprocessed.{ext}"
+        
+    if not os.path.exists(fpath):
+        raise HTTPException(status_code=404, detail="File dataset belum tersedia.")
+        
+    media_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" if ext == "xlsx" else "text/csv"
+    return FileResponse(fpath, filename=filename, media_type=media_type)
+
+@app.get("/api/sentiment/export/ground-truth")
+def export_sentiment_ground_truth(format: str = "xlsx", platform: str = "all"):
+    """Mengunduh file Ground Truth resmi LLM (bisa difilter platform: all, youtube, instagram)."""
+    p_lower = platform.lower()
+    if p_lower == "youtube":
+        suffix = "_youtube"
+        name_tag = "YouTube"
+    elif p_lower == "instagram":
+        suffix = "_instagram"
+        name_tag = "Instagram"
+    else:
+        suffix = ""
+        name_tag = "Combined"
+
+    ext = "xlsx" if format == "xlsx" else "csv"
+    fpath = f"data/dataset_bbm_ground_truth{suffix}.{ext}"
+    filename = f"Ground_Truth_BBM_{name_tag}.{ext}"
+    
+    if not os.path.exists(fpath):
+        fpath = f"data/dataset_bbm_ground_truth.{ext}"
+        filename = f"Ground_Truth_BBM.{ext}"
+        
+    if not os.path.exists(fpath):
+        raise HTTPException(status_code=404, detail="File ground truth belum tersedia.")
+        
+    media_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" if ext == "xlsx" else "text/csv"
+    return FileResponse(fpath, filename=filename, media_type=media_type)
 
 @app.get("/api/sentiment/export/evaluation")
 def export_sentiment_evaluation():

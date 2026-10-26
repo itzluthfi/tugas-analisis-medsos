@@ -8,26 +8,32 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics.pairwise import cosine_similarity
-import torch
-import torch.nn as nn
+try:
+    import torch
+    import torch.nn as nn
+    TORCH_AVAILABLE = True
+except ImportError:
+    torch = None
+    nn = None
+    TORCH_AVAILABLE = False
 
 
 class LinearSVMClassifier:
     """
     Metode Machine Learning Baseline: Support Vector Machine (Linear SVM)
-    Menggunakan representasi fitur teks TF-IDF (Unigram & Bigram).
+    Menggunakan representasi fitur teks TF-IDF (Unigram & Bigram) dengan pembobotan kelas seimbang.
     """
-    def __init__(self, ngram_range: Tuple[int, int] = (1, 2), min_df: int = 2, C: float = 1.0):
+    def __init__(self, ngram_range: Tuple[int, int] = (1, 2), min_df: int = 2, C: float = 1.0, class_weight: Optional[str] = "balanced"):
         self.ngram_range = ngram_range
         self.min_df = min_df
         self.C = C
+        self.class_weight = class_weight
         self.vectorizer = TfidfVectorizer(
             ngram_range=self.ngram_range,
             min_df=self.min_df,
             sublinear_tf=True
         )
-        self.base_model = LinearSVC(C=self.C, random_state=42, max_iter=3000)
+        self.base_model = LinearSVC(C=self.C, class_weight=self.class_weight, random_state=42, max_iter=3000)
         self.model = CalibratedClassifierCV(self.base_model, cv=3)
         self.classes_ = None
         self.is_fitted = False
@@ -35,17 +41,18 @@ class LinearSVMClassifier:
     def fit(self, texts: List[str], labels: List[str]):
         """Melatih TF-IDF Vectorizer dan model Linear SVM."""
         X_tfidf = self.vectorizer.fit_transform(texts)
+        self.base_model.fit(X_tfidf, labels)
         self.model.fit(X_tfidf, labels)
-        self.classes_ = self.model.classes_
+        self.classes_ = self.base_model.classes_
         self.is_fitted = True
         return self
 
     def predict(self, texts: List[str]) -> List[str]:
-        """Memprediksi label sentimen untuk sekumpulan teks."""
+        """Memprediksi label sentimen untuk sekumpulan teks menggunakan hyperplane SVM seimbang."""
         if not self.is_fitted:
             raise ValueError("Model SVM belum dilatih. Panggil fit() terlebih dahulu.")
         X_tfidf = self.vectorizer.transform(texts)
-        return [str(p) for p in self.model.predict(X_tfidf)]
+        return [str(p) for p in self.base_model.predict(X_tfidf)]
 
     def predict_proba(self, texts: List[str]) -> np.ndarray:
         """Mengembalikan probabilitas prediksi untuk setiap kelas."""
@@ -73,11 +80,12 @@ class HybridSVMClassifier:
     Menggabungkan representasi ruang n-gram TF-IDF dengan fitur skalar valensi leksikon InSet.
     Terbukti meningkatkan akurasi dari 70.16% menjadi 95.97% pada dataset ketenagakerjaan.
     """
-    def __init__(self, vectorizer: Optional[TfidfVectorizer] = None, C: float = 1.0):
+    def __init__(self, vectorizer: Optional[TfidfVectorizer] = None, C: float = 1.0, class_weight: Optional[str] = "balanced"):
         self.C = C
+        self.class_weight = class_weight
         self.vectorizer = vectorizer
         self.scaler = StandardScaler()
-        self.base_model = LinearSVC(C=self.C, random_state=42, max_iter=3000)
+        self.base_model = LinearSVC(C=self.C, class_weight=self.class_weight, random_state=42, max_iter=3000)
         self.model = CalibratedClassifierCV(self.base_model, cv=3)
         self.classes_ = None
         self.is_fitted = False
@@ -103,8 +111,9 @@ class HybridSVMClassifier:
         if vectorizer is not None:
             self.vectorizer = vectorizer
         X_hyb = self._build_features(texts, lexicon_scores, fit_scaler=True)
+        self.base_model.fit(X_hyb, labels)
         self.model.fit(X_hyb, labels)
-        self.classes_ = self.model.classes_
+        self.classes_ = self.base_model.classes_
         self.is_fitted = True
         return self
 
@@ -112,7 +121,7 @@ class HybridSVMClassifier:
         if not self.is_fitted:
             raise ValueError("Model Hybrid SVM belum dilatih.")
         X_hyb = self._build_features(texts, lexicon_scores, fit_scaler=False)
-        return [str(p) for p in self.model.predict(X_hyb)]
+        return [str(p) for p in self.base_model.predict(X_hyb)]
 
     def predict_proba(self, texts: List[str], lexicon_scores: List[float]) -> np.ndarray:
         if not self.is_fitted:
@@ -233,17 +242,21 @@ class CosineSimilarityClassifier:
 # METODE 4: DEEP LEARNING (NEURAL BIDIRECTIONAL LSTM + ATTENTION)
 # ====================================================================
 
-class _BiLSTMAttentionNet(nn.Module):
+_BaseModule = nn.Module if TORCH_AVAILABLE else object
+
+class _BiLSTMAttentionNet(_BaseModule):
     """Arsitektur PyTorch Neural Network BiLSTM dengan Self-Attention Pooling."""
     def __init__(self, vocab_size: int, embed_dim: int = 64, hidden_dim: int = 64, num_classes: int = 3, dropout: float = 0.25):
         super().__init__()
+        if not TORCH_AVAILABLE:
+            return
         self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
         self.lstm = nn.LSTM(embed_dim, hidden_dim, batch_first=True, bidirectional=True)
         self.attention = nn.Linear(hidden_dim * 2, 1)
         self.fc = nn.Linear(hidden_dim * 2, num_classes)
         self.dropout = nn.Dropout(dropout)
         
-    def forward(self, x: torch.Tensor):
+    def forward(self, x: Any):
         # x: (batch_size, seq_len)
         emb = self.dropout(self.embedding(x))
         out, _ = self.lstm(emb) # (batch_size, seq_len, hidden_dim*2)
@@ -271,7 +284,7 @@ class NeuralBiLSTMClassifier:
         self.model = None
         self.is_fitted = False
 
-    def _encode_texts(self, texts: List[str]) -> torch.Tensor:
+    def _encode_texts(self, texts: List[str]) -> Any:
         encoded = []
         for txt in texts:
             tokens = str(txt).split()

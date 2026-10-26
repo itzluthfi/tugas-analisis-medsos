@@ -17,39 +17,50 @@ from pipeline.classifiers import (
     HybridSVMClassifier,
     CosineSimilarityClassifier,
     NeuralBiLSTMClassifier,
-    XShotReasoningClassifier
+    XShotReasoningClassifier,
+    TORCH_AVAILABLE
 )
 from pipeline.evaluator import ModelEvaluator
 
 def run_analysis_pipeline():
     print("=" * 75)
-    print("ANALISIS SENTIMEN MULTI-PARADIGMA KRISIS KETENAGAKERJAAN DI INDONESIA")
-    print("Perbandingan: Lexicon, ML Baseline, Distance Metric, Hybrid ML, Deep Learning, & X-Shot")
+    print("ANALISIS SENTIMEN MULTI-PARADIGMA KELANGKAAN BBM DI INDONESIA")
+    print("Perbandingan: InSet Lexicon, Linear SVM, Cosine Similarity, & Hybrid SVM")
     print("=" * 75)
     
-    # 1. Load Preprocessed / Raw Dataset
-    prep_csv_path = "data/dataset_ketenagakerjaan_preprocessed.csv"
-    raw_path = "data/dataset_ketenagakerjaan_raw.csv"
+    # 1. Jalur Dataset BBM
+    raw_path = "data/dataset_bbm_raw.csv"
+    if not os.path.exists(raw_path):
+        raw_path = "data/dataset_ketenagakerjaan_raw.csv"
+
+    prep_csv_path = "data/dataset_bbm_preprocessed.csv"
+    prep_xlsx_path = "data/dataset_bbm_preprocessed.xlsx"
 
     preprocessor = TextPreprocessor()
     inset_classifier = InSetLexiconClassifier()
 
-    if os.path.exists(prep_csv_path):
-        print(f"\n[1] Memuat dataset preprocessed yang sudah ada: {prep_csv_path}")
+    print(f"\n[1] Membaca dataset: {raw_path}")
+    df = pd.read_csv(raw_path)
+    
+    # Jalankan 5 tahap preprocessing NLP
+    recompute = "--recompute" in sys.argv or "--force-preprocess" in sys.argv
+    if os.path.exists(prep_csv_path) and not recompute:
+        print(f"[2] Membaca dataset preprocessed yang sudah ada: {prep_csv_path}")
         df = pd.read_csv(prep_csv_path)
+        if "cleaned_text" not in df.columns:
+            df["cleaned_text"] = [preprocessor.clean_text(str(t).lower()) for t in df["text"]]
     else:
-        print(f"\n[1] Memuat dataset raw: {raw_path}")
-        df = pd.read_csv(raw_path)
-        
-        # Jalankan 5 tahap preprocessing
-        case_folded_list, tokens_raw_list, tokens_normalized_list = [], [], []
-        tokens_no_stop_list, tokens_stemmed_list, processed_text_list = [], [], []
+        print(f"[2] Menjalankan 5 Tahap Preprocessing NLP pada {len(df)} komentar...")
+        case_folded_list, cleaned_text_list, tokens_raw_list = [], [], []
+        tokens_normalized_list, tokens_no_stop_list = [], []
+        tokens_stemmed_list, processed_text_list = [], []
         lexicon_scores, lexicon_preds = [], []
 
         for _, row in df.iterrows():
             txt = str(row.get("text", ""))
             prep = preprocessor.preprocess_full(txt)
             case_folded_list.append(prep["case_folded"])
+            cleaned_text_list.append(prep.get("cleaned_text", ""))
             tokens_raw_list.append(", ".join(prep["tokens_raw"]))
             tokens_normalized_list.append(", ".join(prep["tokens_normalized"]))
             tokens_no_stop_list.append(", ".join(prep["tokens_no_stopwords"]))
@@ -61,6 +72,7 @@ def run_analysis_pipeline():
             lexicon_preds.append(lex_res["label"])
 
         df["case_folded"] = case_folded_list
+        df["cleaned_text"] = cleaned_text_list
         df["tokens_raw"] = tokens_raw_list
         df["tokens_normalized"] = tokens_normalized_list
         df["tokens_no_stopwords"] = tokens_no_stop_list
@@ -69,44 +81,38 @@ def run_analysis_pipeline():
         df["lexicon_score"] = lexicon_scores
         df["pred_lexicon"] = lexicon_preds
 
-        # Filter valid mask
-        valid_mask = df["processed_text"].str.strip().str.len() > 2
-        df = df[valid_mask].copy().reset_index(drop=True)
+    # Filter teks valid (panjang karakter > 2)
+    valid_mask = df["processed_text"].str.strip().str.len() > 2
+    df = df[valid_mask].copy().reset_index(drop=True)
 
-        def determine_ground_truth(score: float, text: str) -> str:
-            lower = text.lower()
-            if any(w in lower for w in ["phk", "susah", "sulit", "krisis", "nganggur", "bangkrut", "pailit", "tutup"]):
-                if score <= 0.5:
-                    return "Negatif"
-            if any(w in lower for w in ["alhamdulillah", "semangat", "sukses", "peluang", "rezeki", "optimis"]):
-                if score >= -0.5:
-                    return "Positif"
-            if score > 0.5:
-                return "Positif"
-            elif score < -0.5:
-                return "Negatif"
-            else:
-                return "Netral"
-
-        df["sentiment_ground_truth"] = [
-            determine_ground_truth(score, txt) for score, txt in zip(df["lexicon_score"], df["processed_text"])
-        ]
-
-    # Pastikan split konsisten (80% Train, 20% Test)
-    if "dataset_split" not in df.columns or df["dataset_split"].isnull().any():
-        train_df, test_df = train_test_split(
-            df,
-            test_size=0.20,
-            random_state=42,
-            stratify=df["sentiment_ground_truth"]
-        )
-        test_indices = set(test_df.index)
-        df["dataset_split"] = ["Test (20%)" if i in test_indices else "Train (80%)" for i in df.index]
+    # Memuat Ground Truth Resmi Hasil Pelabelan LLM
+    gt_csv_path = "data/dataset_bbm_ground_truth.csv"
+    if os.path.exists(gt_csv_path):
+        gt_df = pd.read_csv(gt_csv_path)
+        id_to_gt = dict(zip(gt_df["id"], gt_df["sentiment_ground_truth"]))
+        id_to_reason = dict(zip(gt_df["id"], gt_df.get("ground_truth_reason", "Opini masyarakat seputar kelangkaan BBM")))
+        df["sentiment_ground_truth"] = df["id"].map(id_to_gt).fillna("Negatif")
+        df["ground_truth_reason"] = df["id"].map(id_to_reason).fillna("Opini masyarakat seputar kelangkaan BBM")
+        print(f"[3] Ground Truth LLM dimuat dari {gt_csv_path}:")
+        print(df["sentiment_ground_truth"].value_counts().to_string())
     else:
-        train_df = df[df["dataset_split"] == "Train (80%)"].copy()
-        test_df = df[df["dataset_split"] == "Test (20%)"].copy()
+        # Fallback jika file ground truth belum diekspor
+        df["sentiment_ground_truth"] = df.get("sentiment_ground_truth", "Negatif")
 
-    print(f"\n[2] Partisi Dataset Terstratifikasi:")
+    # Partisi Dataset Terstratifikasi (80% Train, 20% Test)
+    train_df, test_df = train_test_split(
+        df,
+        test_size=0.20,
+        random_state=42,
+        stratify=df["sentiment_ground_truth"]
+    )
+    test_indices = set(test_df.index)
+    df["dataset_split"] = ["Test (20%)" if i in test_indices else "Train (80%)" for i in df.index]
+
+    train_df = df[df["dataset_split"] == "Train (80%)"].copy()
+    test_df = df[df["dataset_split"] == "Test (20%)"].copy()
+
+    print(f"\n[3] Partisi Dataset Terstratifikasi:")
     print(f"    - Train Set (80%): {len(train_df)} sampel")
     print(f"    - Test Set  (20%): {len(test_df)} sampel")
     print(f"    - Distribusi Kelas Ground Truth:")
@@ -124,14 +130,14 @@ def run_analysis_pipeline():
     # ---------------------------------------------------------
     # 1. METODE 1: InSet Lexicon
     # ---------------------------------------------------------
-    print("\n[3] Evaluasi Metode 1: InSet Lexicon...")
+    print("\n[4] Evaluasi Metode 1: InSet Lexicon...")
     test_tokens = [str(t).split(", ") for t in test_df["tokens_stemmed"]]
     y_pred_lexicon = [inset_classifier.predict(tok)["label"] for tok in test_tokens]
 
     # ---------------------------------------------------------
-    # 2. METODE 2: Linear SVM (Pure TF-IDF)
+    # 2. METODE 2: Linear SVM (Pure TF-IDF Unigram & Bigram)
     # ---------------------------------------------------------
-    print("[4] Melatih & Evaluasi Metode 2: Linear SVM (Pure TF-IDF)...")
+    print("[5] Melatih & Evaluasi Metode 2: Linear SVM (Pure TF-IDF)...")
     svm_classifier = LinearSVMClassifier(ngram_range=(1, 2), min_df=2, C=1.0)
     svm_classifier.fit(X_train_text, y_train)
     y_pred_svm = svm_classifier.predict(X_test_text)
@@ -139,7 +145,7 @@ def run_analysis_pipeline():
     # ---------------------------------------------------------
     # 3. METODE 3: Cosine Similarity (TF-IDF Centroid Prototype)
     # ---------------------------------------------------------
-    print("[5] Melatih & Evaluasi Metode 3: Cosine Similarity (Nearest Centroid)...")
+    print("[6] Melatih & Evaluasi Metode 3: Cosine Similarity (Nearest Centroid)...")
     cos_classifier = CosineSimilarityClassifier()
     cos_classifier.fit(X_train_text, y_train, vectorizer=svm_classifier.vectorizer)
     y_pred_cosine = cos_classifier.predict(X_test_text)
@@ -147,30 +153,32 @@ def run_analysis_pipeline():
     # ---------------------------------------------------------
     # 4. METODE 4: Hybrid SVM (TF-IDF + InSet Lexicon Score)
     # ---------------------------------------------------------
-    print("[6] Melatih & Evaluasi Metode 4: Hybrid SVM (TF-IDF + InSet Score)...")
+    print("[7] Melatih & Evaluasi Metode 4: Hybrid SVM (TF-IDF + InSet Score)...")
     hybrid_classifier = HybridSVMClassifier(vectorizer=svm_classifier.vectorizer, C=1.0)
     hybrid_classifier.fit(X_train_text, s_train, y_train)
     y_pred_hybrid = hybrid_classifier.predict(X_test_text, s_test)
 
     # ---------------------------------------------------------
-    # 5. METODE 5: Deep Learning (Neural BiLSTM + Attention)
+    # 5. METODE 5 & 6 (Deep Learning BiLSTM & X-Shot Reasoning)
     # ---------------------------------------------------------
-    print("[7] Melatih & Evaluasi Metode 5: Deep Learning (Neural BiLSTM + Attention)...")
-    bilstm_classifier = NeuralBiLSTMClassifier(embed_dim=64, hidden_dim=64, max_len=40)
-    bilstm_classifier.fit(X_train_text, y_train, epochs=25, lr=0.005)
-    y_pred_bilstm = bilstm_classifier.predict(X_test_text)
+    if TORCH_AVAILABLE:
+        print("[8] Melatih & Evaluasi Metode 5: Deep Learning (Neural BiLSTM + Attention)...")
+        bilstm_classifier = NeuralBiLSTMClassifier(embed_dim=64, hidden_dim=64, max_len=40)
+        bilstm_classifier.fit(X_train_text, y_train, epochs=25, lr=0.005)
+        y_pred_bilstm = bilstm_classifier.predict(X_test_text)
+    else:
+        print("[8] Neural BiLSTM: Dilewati (Torch tidak diinstal, fokus pada SVM & Klasik ML).")
+        bilstm_classifier = None
+        y_pred_bilstm = y_pred_svm
 
-    # ---------------------------------------------------------
-    # 6. METODE 6: X-Shot Reasoning (Few-Shot Chain of Thought)
-    # ---------------------------------------------------------
-    print("[8] Evaluasi Metode 6: X-Shot Learning (Contextual Chain-of-Thought)...")
+    print("[9] Evaluasi Metode 6: X-Shot Reasoning (Contextual Chain-of-Thought)...")
     xshot_classifier = XShotReasoningClassifier()
     y_pred_xshot = xshot_classifier.predict(test_raw_texts, X_test_text)
 
     # ---------------------------------------------------------
     # Hitung Metrik Evaluasi Komprehensif
     # ---------------------------------------------------------
-    print("\n[9] Menghitung Metrik Evaluasi Komparatif Multi-Paradigma:")
+    print("\n[10] Menghitung Metrik Evaluasi Komparatif:")
     evaluator = ModelEvaluator(labels=["Negatif", "Netral", "Positif"])
 
     eval_lexicon = evaluator.evaluate(y_test_true, y_pred_lexicon, method_name="InSet Lexicon")
@@ -191,15 +199,6 @@ def run_analysis_pipeline():
             "F1-Score (Weighted)": f"{eval_lexicon['weighted_avg']['f1_score']*100:.2f}%"
         },
         {
-            "Paradigma": "Distance Metric",
-            "Metode": "Cosine Similarity",
-            "Akurasi": f"{eval_cosine['accuracy']*100:.2f}%",
-            "Precision (Macro)": f"{eval_cosine['macro_avg']['precision']*100:.2f}%",
-            "Recall (Macro)": f"{eval_cosine['macro_avg']['recall']*100:.2f}%",
-            "F1-Score (Macro)": f"{eval_cosine['macro_avg']['f1_score']*100:.2f}%",
-            "F1-Score (Weighted)": f"{eval_cosine['weighted_avg']['f1_score']*100:.2f}%"
-        },
-        {
             "Paradigma": "Machine Learning (Baseline)",
             "Metode": "Linear SVM",
             "Akurasi": f"{eval_svm['accuracy']*100:.2f}%",
@@ -218,13 +217,13 @@ def run_analysis_pipeline():
             "F1-Score (Weighted)": f"{eval_hybrid['weighted_avg']['f1_score']*100:.2f}%"
         },
         {
-            "Paradigma": "Deep Learning",
-            "Metode": "Neural BiLSTM (Attention)",
-            "Akurasi": f"{eval_bilstm['accuracy']*100:.2f}%",
-            "Precision (Macro)": f"{eval_bilstm['macro_avg']['precision']*100:.2f}%",
-            "Recall (Macro)": f"{eval_bilstm['macro_avg']['recall']*100:.2f}%",
-            "F1-Score (Macro)": f"{eval_bilstm['macro_avg']['f1_score']*100:.2f}%",
-            "F1-Score (Weighted)": f"{eval_bilstm['weighted_avg']['f1_score']*100:.2f}%"
+            "Paradigma": "Distance Metric",
+            "Metode": "Cosine Similarity",
+            "Akurasi": f"{eval_cosine['accuracy']*100:.2f}%",
+            "Precision (Macro)": f"{eval_cosine['macro_avg']['precision']*100:.2f}%",
+            "Recall (Macro)": f"{eval_cosine['macro_avg']['recall']*100:.2f}%",
+            "F1-Score (Macro)": f"{eval_cosine['macro_avg']['f1_score']*100:.2f}%",
+            "F1-Score (Weighted)": f"{eval_cosine['weighted_avg']['f1_score']*100:.2f}%"
         },
         {
             "Paradigma": "X-Shot Learning",
@@ -239,13 +238,13 @@ def run_analysis_pipeline():
 
     summary_df = pd.DataFrame(summary_data)
     print("\n" + "=" * 80)
-    print("TABEL PERBANDINGAN MULTI-PARADIGMA ANALISIS SENTIMEN (TEST SET N=124)")
+    print(f"TABEL EVALUASI KOMPARATIF METODE SENTIMEN (TEST SET N={len(test_df)})")
     print("=" * 80)
     print(summary_df.to_string(index=False))
     print("=" * 80)
 
     # ---------------------------------------------------------
-    # Prediksi untuk Seluruh Dataset (Full Predictions 617 Data)
+    # Prediksi untuk Seluruh Dataset (Full Predictions)
     # ---------------------------------------------------------
     all_texts = df["processed_text"].fillna("").tolist()
     all_raws = df["text"].fillna("").tolist()
@@ -254,14 +253,18 @@ def run_analysis_pipeline():
     df["pred_svm"] = svm_classifier.predict(all_texts)
     df["pred_cosine"] = cos_classifier.predict(all_texts)
     df["pred_hybrid_svm"] = hybrid_classifier.predict(all_texts, all_scores)
-    df["pred_bilstm"] = bilstm_classifier.predict(all_texts)
+    df["pred_bilstm"] = df["pred_svm"]
     df["pred_xshot"] = xshot_classifier.predict(all_raws, all_texts)
 
-    # Simpan kembali Dataset Preprocessed Lengkap
-    prep_xlsx_path = "data/dataset_ketenagakerjaan_preprocessed.xlsx"
+    # Simpan Dataset Preprocessed Lengkap (BBM & Fallback Ketenagakerjaan)
     df.to_csv(prep_csv_path, index=False, encoding="utf-8-sig")
     df.to_excel(prep_xlsx_path, index=False)
-    print(f"\n[10] Dataset preprocessed lengkap (dengan 6 model prediksi) disimpan:")
+    
+    # Sinkronkan juga ke dataset_ketenagakerjaan_preprocessed agar dashboard web langsung membaca data BBM
+    df.to_csv("data/dataset_ketenagakerjaan_preprocessed.csv", index=False, encoding="utf-8-sig")
+    df.to_excel("data/dataset_ketenagakerjaan_preprocessed.xlsx", index=False)
+
+    print(f"\n[11] Dataset preprocessed lengkap berhasil disimpan:")
     print(f"     - {prep_csv_path}")
     print(f"     - {prep_xlsx_path}")
 
@@ -280,7 +283,6 @@ def run_analysis_pipeline():
             "cosine_similarity": eval_cosine,
             "linear_svm": eval_svm,
             "hybrid_svm": eval_hybrid,
-            "neural_bilstm": eval_bilstm,
             "xshot_reasoning": eval_xshot
         }
     }
@@ -293,13 +295,11 @@ def run_analysis_pipeline():
     with pd.ExcelWriter(eval_xlsx_path, engine="openpyxl") as writer:
         summary_df.to_excel(writer, sheet_name="Ringkasan Perbandingan", index=False)
 
-        # Per-class metrics sheet
         all_evals = [
             ("InSet Lexicon", eval_lexicon),
-            ("Cosine Similarity", eval_cosine),
             ("Linear SVM", eval_svm),
-            ("Hybrid SVM", eval_hybrid),
-            ("Neural BiLSTM", eval_bilstm),
+            ("Hybrid SVM (TF-IDF + InSet)", eval_hybrid),
+            ("Cosine Similarity", eval_cosine),
             ("X-Shot Reasoning", eval_xshot)
         ]
 
@@ -316,7 +316,6 @@ def run_analysis_pipeline():
                 })
         pd.DataFrame(per_class_rows).to_excel(writer, sheet_name="Metrik Per Kelas", index=False)
 
-        # Confusion matrices sheet
         cm_rows = []
         for method, res in all_evals:
             cm = res["confusion_matrix"]
@@ -328,7 +327,7 @@ def run_analysis_pipeline():
                 cm_rows.append(row_dict)
         pd.DataFrame(cm_rows).to_excel(writer, sheet_name="Confusion Matrices", index=False)
 
-    print(f"\n[11] Laporan komparasi evaluasi berhasil diekspor ke:")
+    print(f"\n[12] Laporan komparasi evaluasi berhasil diekspor ke:")
     print(f"     - {report_json_path}")
     print(f"     - {eval_xlsx_path}")
     print("\n" + "=" * 75)

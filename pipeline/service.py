@@ -9,7 +9,8 @@ from pipeline.classifiers import (
     HybridSVMClassifier,
     CosineSimilarityClassifier,
     NeuralBiLSTMClassifier,
-    XShotReasoningClassifier
+    XShotReasoningClassifier,
+    TORCH_AVAILABLE
 )
 from pipeline.evaluator import ModelEvaluator
 
@@ -22,7 +23,7 @@ class SentimentResearchService:
         self.svm = LinearSVMClassifier(ngram_range=(1, 2), min_df=2, C=1.0)
         self.cosine = CosineSimilarityClassifier()
         self.hybrid_svm = HybridSVMClassifier(C=1.0)
-        self.bilstm = NeuralBiLSTMClassifier(embed_dim=64, hidden_dim=64, max_len=40)
+        self.bilstm = NeuralBiLSTMClassifier(embed_dim=64, hidden_dim=64, max_len=40) if TORCH_AVAILABLE else None
         self.xshot = XShotReasoningClassifier()
         self.evaluator = ModelEvaluator(labels=["Negatif", "Netral", "Positif"])
         
@@ -39,12 +40,14 @@ class SentimentResearchService:
         return cls._instance
 
     def _load_or_train(self):
-        prep_csv = "data/dataset_ketenagakerjaan_preprocessed.csv"
+        prep_csv = "data/dataset_bbm_preprocessed.csv"
+        if not os.path.exists(prep_csv):
+            prep_csv = "data/dataset_ketenagakerjaan_preprocessed.csv"
         eval_json = "data/evaluasi_komparasi_sentimen.json"
         
         if os.path.exists(prep_csv):
             self.dataset_df = pd.read_csv(prep_csv)
-            # Melatih SVM, Cosine, Hybrid SVM, & BiLSTM pada data latih (80%)
+            # Melatih SVM, Cosine, Hybrid SVM pada data latih (80%)
             train_mask = self.dataset_df["dataset_split"] == "Train (80%)"
             train_data = self.dataset_df[train_mask]
             
@@ -61,8 +64,9 @@ class SentimentResearchService:
             # 3. Melatih Hybrid SVM
             self.hybrid_svm.fit(X_train, s_train, y_train, vectorizer=self.svm.vectorizer)
             
-            # 4. Melatih Deep Learning BiLSTM
-            self.bilstm.fit(X_train, y_train, epochs=25, lr=0.005)
+            # 4. Melatih Deep Learning BiLSTM jika tersedia
+            if TORCH_AVAILABLE and self.bilstm:
+                self.bilstm.fit(X_train, y_train, epochs=25, lr=0.005)
             
             self.is_ready = True
             
@@ -171,7 +175,7 @@ class SentimentResearchService:
 
         # 5. Neural BiLSTM with Word Attention
         bilstm_res = {"label": "Netral", "confidence": 0.0, "probabilities": {}, "word_attentions": []}
-        if self.is_ready:
+        if self.is_ready and self.bilstm is not None:
             bilstm_res = self.bilstm.predict_single(prep["processed_text"])
 
         # 6. X-Shot Reasoning (Chain of Thought)

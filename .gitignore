@@ -28,9 +28,12 @@ ENV/
 env.bak/
 venv.bak/
 
-# Environment Variables
+# Environment Variables & Credentials
 .env
 .env.local
+config/
+*.cookie
+*.cookies
 
 # Backups & Temporary files
 *.bak

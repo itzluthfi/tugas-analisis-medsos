@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Intelligence &bull; Labor Sentiment Research</title>
+  <title>Social Intelligence &bull; Riset Sentimen Kelangkaan BBM</title>
   
   <!-- Tailwind CSS CDN dengan class-based dark mode -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -89,9 +89,9 @@
         <button onclick="openLaborSentimentDashboard()" class="w-full flex items-center justify-between px-2.5 py-2 rounded-lg text-emerald-700 bg-emerald-50 dark:text-emerald-400 dark:bg-emerald-950/30 hover:bg-emerald-100/60 dark:hover:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800/40 transition text-xs font-semibold text-left">
           <div class="flex items-center gap-2.5">
             <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0"></i>
-            <span>Riset Sentimen Kerja</span>
+            <span>Riset Sentimen BBM</span>
           </div>
-          <span class="text-[9px] bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-300 px-1.5 py-0.5 rounded font-mono font-bold">617 Data</span>
+          <span class="text-[9px] bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-300 px-1.5 py-0.5 rounded font-mono font-bold">516 Data</span>
         </button>
         
         <button onclick="toggleSettingsModal()" class="w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-slate-600 dark:text-zinc-400 hover:bg-slate-100 dark:hover:bg-[#1a1a20] transition text-xs font-medium text-left">
@@ -171,7 +171,7 @@
         <!-- Direct Button to Riset Dashboard -->
         <button onclick="openLaborSentimentDashboard()" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
           <i data-lucide="bar-chart-3" class="w-3.5 h-3.5"></i>
-          <span class="hidden sm:inline">Riset Ketenagakerjaan</span>
+          <span class="hidden sm:inline">Riset Kelangkaan BBM</span>
         </button>
 
         <!-- Dropdown Export Menu -->
@@ -302,10 +302,10 @@
               <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/40">
                 Akses Cepat Riset Utama
               </span>
-              <span class="text-[10px] text-slate-500 dark:text-zinc-400 font-mono">617 Data &bull; InSet &bull; SVM &bull; Cosine</span>
+              <span class="text-[10px] text-slate-500 dark:text-zinc-400 font-mono">516 Data &bull; InSet &bull; SVM &bull; Cosine</span>
             </div>
             <h3 class="text-sm font-bold text-slate-800 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition">
-              Analisis Sentimen: Krisis Ketenagakerjaan di Indonesia
+              Analisis Sentimen: Krisis Kelangkaan BBM di Indonesia
             </h3>
             <p class="text-[11px] text-slate-500 dark:text-zinc-400">
               Lihat tabel 617 data komentar, bukti ground truth, metrik akurasi 3 model, dan uji coba sentimen live.
@@ -323,10 +323,10 @@
             <span class="text-[10px] text-slate-400 dark:text-zinc-500">Klik untuk mencari</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs">
-            <button onclick="quickSearch('krisis ketenagakerjaan indonesia phk massal')" class="p-3 rounded-xl bg-white dark:bg-[#16161a] hover:bg-slate-50 dark:hover:bg-[#1c1c22] border border-slate-200 dark:border-[#2d2d35] hover:border-emerald-500 text-left transition space-y-1 group shadow-sm">
+            <button onclick="quickSearch('kelangkaan bbm pertalite solar antre spbu')" class="p-3 rounded-xl bg-white dark:bg-[#16161a] hover:bg-slate-50 dark:hover:bg-[#1c1c22] border border-slate-200 dark:border-[#2d2d35] hover:border-emerald-500 text-left transition space-y-1 group shadow-sm">
               <div class="font-semibold text-slate-800 dark:text-zinc-200 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 flex items-center gap-1.5">
                 <i data-lucide="briefcase" class="w-3.5 h-3.5 text-slate-500 dark:text-zinc-400"></i>
-                <span>Krisis Ketenagakerjaan</span>
+                <span>Kelangkaan BBM SPBU</span>
               </div>
               <div class="text-[11px] text-slate-500 dark:text-zinc-400">Gelombang PHK massal pabrik</div>
             </button>
@@ -440,12 +440,12 @@
                 Sumber: YouTube Public Discourse (Real Comments)
               </span>
               <span class="text-[11px] px-2.5 py-0.5 rounded bg-slate-100 dark:bg-[#1f1f26] text-slate-600 dark:text-zinc-300 border border-slate-200 dark:border-[#2d2d35] font-mono">
-                Dataset: 617 Data Komentar Riil Valid
+                Dataset: 516 Data Komentar Riil Valid
               </span>
             </div>
             
             <h1 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-zinc-100 tracking-tight">
-              Analisis Sentimen Publik terhadap Krisis Ketenagakerjaan di Indonesia
+              Analisis Sentimen Publik terhadap Krisis Kelangkaan BBM di Indonesia
             </h1>
             <p class="text-xs md:text-sm text-slate-600 dark:text-zinc-400 max-w-3xl leading-relaxed">
               Perbandingan komprehensif 6 metode lintas paradigma: 
@@ -458,18 +458,26 @@
             </p>
 
             <!-- Direct Evidence / Ground Truth Download Actions -->
-            <div class="pt-2 flex flex-wrap items-center gap-2.5 border-t border-slate-100 dark:border-[#222226]">
-              <a href="/api/sentiment/export/dataset?format=xlsx" target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
+            <div class="pt-2 flex flex-wrap items-center gap-2 border-t border-slate-100 dark:border-[#222226]">
+              <a href="/api/sentiment/export/ground-truth?format=xlsx" target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
                 <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5"></i>
-                <span>Unduh Bukti Ground Truth (.xlsx)</span>
+                <span>Ground Truth (Semua .xlsx)</span>
               </a>
-              <a href="/api/sentiment/export/dataset?format=csv" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#1f1f26] dark:hover:bg-[#272730] text-slate-700 dark:text-zinc-200 border border-slate-300 dark:border-[#2d2d35] text-xs font-medium flex items-center gap-1.5 transition">
-                <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
-                <span>Unduh Dataset (.csv)</span>
+              <a href="/api/sentiment/export/ground-truth?format=xlsx&platform=youtube" target="_blank" class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
+                <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                <span>Ground Truth YouTube (.xlsx)</span>
+              </a>
+              <a href="/api/sentiment/export/ground-truth?format=xlsx&platform=instagram" target="_blank" class="px-3 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
+                <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
+                <span>Ground Truth Instagram (.xlsx)</span>
+              </a>
+              <a href="/api/sentiment/export/dataset?format=xlsx" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#1f1f26] dark:hover:bg-[#272730] text-slate-700 dark:text-zinc-200 border border-slate-300 dark:border-[#2d2d35] text-xs font-medium flex items-center gap-1.5 transition">
+                <i data-lucide="database" class="w-3.5 h-3.5"></i>
+                <span>Dataset Preprocessed (.xlsx)</span>
               </a>
               <a href="/api/sentiment/export/evaluation" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#1f1f26] dark:hover:bg-[#272730] text-slate-700 dark:text-zinc-200 border border-slate-300 dark:border-[#2d2d35] text-xs font-medium flex items-center gap-1.5 transition">
                 <i data-lucide="download" class="w-3.5 h-3.5"></i>
-                <span>Laporan Evaluasi Lengkap (.xlsx)</span>
+                <span>Laporan Evaluasi (.xlsx)</span>
               </a>
             </div>
           </div>
@@ -483,7 +491,7 @@
           </button>
           <button id="s-subtab-dataset" onclick="switchSentimentSubtab('dataset')" class="px-3.5 py-2 rounded-lg font-medium text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white transition flex items-center gap-2 shrink-0">
             <i data-lucide="database" class="w-4 h-4"></i>
-            <span>Tabel & Audit Ground Truth (617 Data)</span>
+            <span>Tabel & Audit Ground Truth (516 Data)</span>
           </button>
           <button id="s-subtab-simulator" onclick="switchSentimentSubtab('simulator')" class="px-3.5 py-2 rounded-lg font-medium text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white transition flex items-center gap-2 shrink-0">
             <i data-lucide="play-circle" class="w-4 h-4"></i>
@@ -512,17 +520,17 @@
                 <span class="text-xs px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-400 font-semibold font-mono">InSet Lexicon</span>
               </div>
               <div>
-                <div class="text-3xl font-extrabold text-slate-900 dark:text-white">99.19%</div>
-                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=124)</div>
+                <div class="text-3xl font-extrabold text-slate-900 dark:text-white">75.00%</div>
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=104)</div>
               </div>
               <div class="pt-2 border-t border-slate-100 dark:border-[#24242c] grid grid-cols-2 gap-2 text-xs">
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Macro F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">98.51%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">41.90%</span>
                 </div>
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Weighted F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">99.19%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">75.00%</span>
                 </div>
               </div>
               <p class="text-[11px] text-slate-500 dark:text-zinc-400 leading-snug">
@@ -540,21 +548,21 @@
                 <span class="text-xs px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-300 font-semibold font-mono">Hybrid SVM</span>
               </div>
               <div>
-                <div class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">92.74%</div>
-                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=124)</div>
+                <div class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">78.85%</div>
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=104)</div>
               </div>
               <div class="pt-2 border-t border-slate-100 dark:border-[#24242c] grid grid-cols-2 gap-2 text-xs">
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Macro F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">87.71%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">39.92%</span>
                 </div>
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Weighted F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">92.36%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">78.69%</span>
                 </div>
               </div>
               <p class="text-[11px] text-slate-500 dark:text-zinc-400 leading-snug">
-                Augmentasi fitur TF-IDF n-gram dengan skor valensi leksikon InSet (+22.58% vs baseline SVM!).
+                Augmentasi fitur TF-IDF n-gram dengan skor valensi leksikon InSet (+11.54% vs baseline SVM!).
               </p>
             </div>
 
@@ -565,17 +573,17 @@
                 <span class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 dark:bg-[#202028] dark:text-zinc-300 font-semibold font-mono">Linear SVM</span>
               </div>
               <div>
-                <div class="text-3xl font-extrabold text-slate-900 dark:text-white">70.16%</div>
-                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=124)</div>
+                <div class="text-3xl font-extrabold text-slate-900 dark:text-white">79.81%</div>
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=104)</div>
               </div>
               <div class="pt-2 border-t border-slate-100 dark:border-[#24242c] grid grid-cols-2 gap-2 text-xs">
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Macro F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">51.74%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">40.49%</span>
                 </div>
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Weighted F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">65.74%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">79.38%</span>
                 </div>
               </div>
               <p class="text-[11px] text-slate-500 dark:text-zinc-400 leading-snug">
@@ -590,17 +598,17 @@
                 <span class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 dark:bg-[#202028] dark:text-zinc-300 font-semibold font-mono">Cosine Sim</span>
               </div>
               <div>
-                <div class="text-3xl font-extrabold text-slate-900 dark:text-white">67.74%</div>
-                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=124)</div>
+                <div class="text-3xl font-extrabold text-slate-900 dark:text-white">74.04%</div>
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=104)</div>
               </div>
               <div class="pt-2 border-t border-slate-100 dark:border-[#24242c] grid grid-cols-2 gap-2 text-xs">
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Macro F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">58.73%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">39.12%</span>
                 </div>
                 <div>
                   <span class="text-slate-400 dark:text-zinc-500 text-[10px] block font-mono">Weighted F1</span>
-                  <span class="font-bold text-slate-800 dark:text-zinc-200">68.39%</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">75.90%</span>
                 </div>
               </div>
               <p class="text-[11px] text-slate-500 dark:text-zinc-400 leading-snug">
@@ -616,7 +624,7 @@
               </div>
               <div>
                 <div class="text-3xl font-extrabold text-slate-900 dark:text-white">64.52%</div>
-                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=124)</div>
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">Akurasi Keseluruhan (Test Set N=104)</div>
               </div>
               <div class="pt-2 border-t border-slate-100 dark:border-[#24242c] grid grid-cols-2 gap-2 text-xs">
                 <div>
@@ -666,7 +674,7 @@
               <div>
                 <h3 class="text-sm font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
                   <i data-lucide="table" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
-                  <span>Tabel Komparasi Performa 6 Metode Multi-Paradigma (Test Set N=124)</span>
+                  <span>Tabel Komparasi Performa 6 Metode Multi-Paradigma (Test Set N=104)</span>
                 </h3>
                 <p class="text-xs text-slate-500 dark:text-zinc-400">Evaluasi adil pada partisi data uji identik (20% Stratified Split dari 617 data komentar).</p>
               </div>
@@ -693,38 +701,38 @@
                   <tr class="hover:bg-slate-50 dark:hover:bg-[#1c1c22] transition bg-emerald-50/30 dark:bg-emerald-950/20">
                     <td class="px-4 py-3 font-medium text-emerald-700 dark:text-emerald-400">Lexicon-Based</td>
                     <td class="px-4 py-3 font-bold text-slate-900 dark:text-zinc-100">InSet Lexicon</td>
-                    <td class="px-4 py-3 text-center font-bold text-emerald-700 dark:text-emerald-400">99.19%</td>
-                    <td class="px-4 py-3 text-center">98.67%</td>
-                    <td class="px-4 py-3 text-center">98.41%</td>
-                    <td class="px-4 py-3 text-center font-semibold">98.51%</td>
-                    <td class="px-4 py-3 text-center font-semibold">99.19%</td>
+                    <td class="px-4 py-3 text-center font-bold text-emerald-700 dark:text-emerald-400">75.00%</td>
+                    <td class="px-4 py-3 text-center">43.33%</td>
+                    <td class="px-4 py-3 text-center">40.61%</td>
+                    <td class="px-4 py-3 text-center font-semibold">41.90%</td>
+                    <td class="px-4 py-3 text-center font-semibold">75.00%</td>
                   </tr>
                   <tr class="hover:bg-slate-50 dark:hover:bg-[#1c1c22] transition bg-emerald-50/10 dark:bg-emerald-950/10">
                     <td class="px-4 py-3 font-medium text-emerald-600 dark:text-emerald-400">Machine Learning (Hybrid)</td>
                     <td class="px-4 py-3 font-bold text-slate-900 dark:text-zinc-100">Hybrid SVM (TF-IDF + InSet)</td>
-                    <td class="px-4 py-3 text-center font-bold text-emerald-600 dark:text-emerald-400">92.74%</td>
-                    <td class="px-4 py-3 text-center">90.15%</td>
-                    <td class="px-4 py-3 text-center">87.30%</td>
-                    <td class="px-4 py-3 text-center font-semibold">87.71%</td>
-                    <td class="px-4 py-3 text-center font-semibold">92.36%</td>
+                    <td class="px-4 py-3 text-center font-bold text-emerald-600 dark:text-emerald-400">78.85%</td>
+                    <td class="px-4 py-3 text-center">39.58%</td>
+                    <td class="px-4 py-3 text-center">40.28%</td>
+                    <td class="px-4 py-3 text-center font-semibold">39.92%</td>
+                    <td class="px-4 py-3 text-center font-semibold">78.69%</td>
                   </tr>
                   <tr class="hover:bg-slate-50 dark:hover:bg-[#1c1c22] transition">
                     <td class="px-4 py-3 font-medium text-slate-500 dark:text-zinc-400">Machine Learning (Baseline)</td>
                     <td class="px-4 py-3 font-semibold text-slate-800 dark:text-zinc-200">Linear SVM</td>
-                    <td class="px-4 py-3 text-center font-bold">70.16%</td>
-                    <td class="px-4 py-3 text-center">64.66%</td>
-                    <td class="px-4 py-3 text-center">49.50%</td>
-                    <td class="px-4 py-3 text-center font-semibold">51.74%</td>
-                    <td class="px-4 py-3 text-center font-semibold">65.74%</td>
+                    <td class="px-4 py-3 text-center font-bold">79.81%</td>
+                    <td class="px-4 py-3 text-center">40.32%</td>
+                    <td class="px-4 py-3 text-center">40.66%</td>
+                    <td class="px-4 py-3 text-center font-semibold">40.49%</td>
+                    <td class="px-4 py-3 text-center font-semibold">79.38%</td>
                   </tr>
                   <tr class="hover:bg-slate-50 dark:hover:bg-[#1c1c22] transition">
                     <td class="px-4 py-3 font-medium text-slate-500 dark:text-zinc-400">Distance Metric</td>
                     <td class="px-4 py-3 font-semibold text-slate-800 dark:text-zinc-200">Cosine Similarity</td>
-                    <td class="px-4 py-3 text-center font-bold">67.74%</td>
-                    <td class="px-4 py-3 text-center">58.03%</td>
-                    <td class="px-4 py-3 text-center">59.67%</td>
-                    <td class="px-4 py-3 text-center font-semibold">58.73%</td>
-                    <td class="px-4 py-3 text-center font-semibold">68.39%</td>
+                    <td class="px-4 py-3 text-center font-bold">74.04%</td>
+                    <td class="px-4 py-3 text-center">38.74%</td>
+                    <td class="px-4 py-3 text-center">40.23%</td>
+                    <td class="px-4 py-3 text-center font-semibold">39.12%</td>
+                    <td class="px-4 py-3 text-center font-semibold">75.90%</td>
                   </tr>
                   <tr class="hover:bg-slate-50 dark:hover:bg-[#1c1c22] transition">
                     <td class="px-4 py-3 font-medium text-slate-500 dark:text-zinc-400">Deep Learning</td>
@@ -756,7 +764,7 @@
             <div class="bg-white dark:bg-[#16161a] border border-slate-200 dark:border-[#2d2d35] rounded-2xl p-4 shadow-sm space-y-3">
               <div class="flex items-center justify-between">
                 <span class="font-bold text-xs text-slate-900 dark:text-zinc-100">1. InSet Lexicon CM</span>
-                <span class="text-[10px] text-emerald-700 dark:text-emerald-400 font-mono font-bold">123/124 Benar (99.2%)</span>
+                <span class="text-[10px] text-emerald-700 dark:text-emerald-400 font-mono font-bold">78/104 Benar (75.0%)</span>
               </div>
               <div class="grid grid-cols-4 gap-1 text-[10px] text-center font-mono">
                 <div class="text-slate-400 py-0.5">Aktual\Pred</div>
@@ -764,20 +772,20 @@
                 <div class="bg-slate-100 dark:bg-[#202028] py-0.5 rounded">Net</div>
                 <div class="bg-slate-100 dark:bg-[#202028] py-0.5 rounded">Pos</div>
 
-                <div class="text-slate-500 text-left pl-1">Neg (79)</div>
-                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">79</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
+                <div class="text-slate-500 text-left pl-1">Neg (88)</div>
+                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">72</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">9</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">7</div>
 
-                <div class="text-slate-500 text-left pl-1">Net (24)</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
-                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">24</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
+                <div class="text-slate-500 text-left pl-1">Net (15)</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">7</div>
+                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">6</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">2</div>
 
-                <div class="text-slate-500 text-left pl-1">Pos (21)</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
+                <div class="text-slate-500 text-left pl-1">Pos (1)</div>
                 <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">1</div>
-                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">20</div>
+                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
+                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
               </div>
             </div>
 
@@ -785,7 +793,7 @@
             <div class="bg-white dark:bg-[#16161a] border border-emerald-300 dark:border-emerald-800/60 rounded-2xl p-4 shadow-sm space-y-3">
               <div class="flex items-center justify-between">
                 <span class="font-bold text-xs text-slate-900 dark:text-zinc-100">2. Hybrid SVM CM</span>
-                <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono font-bold">115/124 Benar (92.7%)</span>
+                <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono font-bold">82/104 Benar (78.8%)</span>
               </div>
               <div class="grid grid-cols-4 gap-1 text-[10px] text-center font-mono">
                 <div class="text-slate-400 py-0.5">Aktual\Pred</div>
@@ -793,28 +801,28 @@
                 <div class="bg-slate-100 dark:bg-[#202028] py-0.5 rounded">Net</div>
                 <div class="bg-slate-100 dark:bg-[#202028] py-0.5 rounded">Pos</div>
 
-                <div class="text-slate-500 text-left pl-1">Neg (79)</div>
+                <div class="text-slate-500 text-left pl-1">Neg (88)</div>
                 <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">77</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">1</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">1</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">10</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">1</div>
 
-                <div class="text-slate-500 text-left pl-1">Net (24)</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">4</div>
-                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">19</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">1</div>
-
-                <div class="text-slate-500 text-left pl-1">Pos (21)</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">2</div>
+                <div class="text-slate-500 text-left pl-1">Net (15)</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">10</div>
+                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">5</div>
                 <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
-                <div class="bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-bold py-1 rounded">19</div>
+
+                <div class="text-slate-500 text-left pl-1">Pos (1)</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">1</div>
+                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
+                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded text-slate-400">0</div>
               </div>
             </div>
 
             <!-- Linear SVM Baseline CM -->
             <div class="bg-white dark:bg-[#16161a] border border-slate-200 dark:border-[#2d2d35] rounded-2xl p-4 shadow-sm space-y-3">
               <div class="flex items-center justify-between">
-                <span class="font-bold text-xs text-slate-900 dark:text-zinc-100">3. Linear SVM CM</span>
-                <span class="text-[10px] text-slate-500 dark:text-zinc-400 font-mono font-bold">87/124 Benar (70.2%)</span>
+                <span class="font-bold text-xs text-slate-900 dark:text-zinc-100">3. Linear SVM CM (Terbaik)</span>
+                <span class="text-[10px] text-slate-500 dark:text-zinc-400 font-mono font-bold">83/104 Benar (79.8%)</span>
               </div>
               <div class="grid grid-cols-4 gap-1 text-[10px] text-center font-mono">
                 <div class="text-slate-400 py-0.5">Aktual\Pred</div>
@@ -822,20 +830,20 @@
                 <div class="bg-slate-100 dark:bg-[#202028] py-0.5 rounded">Net</div>
                 <div class="bg-slate-100 dark:bg-[#202028] py-0.5 rounded">Pos</div>
 
-                <div class="text-slate-500 text-left pl-1">Neg (79)</div>
-                <div class="bg-slate-200 dark:bg-[#282832] font-bold py-1 rounded">73</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">1</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">5</div>
-
-                <div class="text-slate-500 text-left pl-1">Net (24)</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">15</div>
-                <div class="bg-slate-200 dark:bg-[#282832] font-bold py-1 rounded">8</div>
+                <div class="text-slate-500 text-left pl-1">Neg (83)</div>
+                <div class="bg-slate-200 dark:bg-[#282832] font-bold py-1 rounded">75</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">7</div>
                 <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">1</div>
 
-                <div class="text-slate-500 text-left pl-1">Pos (21)</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">11</div>
-                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">4</div>
-                <div class="bg-slate-200 dark:bg-[#282832] font-bold py-1 rounded">6</div>
+                <div class="text-slate-500 text-left pl-1">Net (10)</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">5</div>
+                <div class="bg-slate-200 dark:bg-[#282832] font-bold py-1 rounded">4</div>
+                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">1</div>
+
+                <div class="text-slate-500 text-left pl-1">Pos (11)</div>
+                <div class="bg-slate-100 dark:bg-[#25252c] py-1 rounded text-slate-600">9</div>
+                <div class="bg-slate-50 dark:bg-[#1c1c22] py-1 rounded">1</div>
+                <div class="bg-slate-200 dark:bg-[#282832] font-bold py-1 rounded">1</div>
               </div>
             </div>
 
@@ -873,7 +881,7 @@
               <div>
                 <h3 class="text-sm font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
                   <i data-lucide="database" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
-                  <span>Tabel Bukti Ground Truth & Prediksi 5 Model (N=617)</span>
+                  <span>Tabel Bukti Ground Truth & Prediksi 5 Model (N=516)</span>
                 </h3>
                 <p class="text-xs text-slate-500 dark:text-zinc-400">Data komentar riil publik dilengkapi teks asli, hasil stemming Sastrawi, target ground truth, dan status tebakan tiap model.</p>
               </div>
@@ -903,7 +911,7 @@
                 </select>
 
                 <select id="ds-filter-status" onchange="applyDatasetFilters()" class="bg-slate-50 dark:bg-[#1a1a20] border border-slate-200 dark:border-[#2d2d35] rounded-lg px-3 py-2 text-slate-900 dark:text-zinc-100 focus:outline-none focus:border-emerald-500 font-medium">
-                  <option value="all">Semua Hasil Tebakan (617 Data)</option>
+                  <option value="all">Semua Hasil Tebakan (516 Data)</option>
                   <option value="mismatch">Hanya Yang Ada Miskalsifikasi / Salah Tebak</option>
                   <option value="all_correct">Hanya Yang Kompak Benar</option>
                   <option value="mismatch_svm">Hanya Baseline SVM Salah</option>
@@ -938,7 +946,7 @@
                   <span class="text-[11px] text-slate-500 dark:text-zinc-400">Partisi:</span>
                   <select id="ds-filter-split" onchange="applyDatasetFilters()" class="bg-slate-50 dark:bg-[#1a1a20] border border-slate-200 dark:border-[#2d2d35] rounded-lg px-2.5 py-1 text-xs text-slate-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500 font-mono">
                     <option value="all">Semua (Train 80% & Test 20%)</option>
-                    <option value="test">Hanya Data Uji / Test Set (124)</option>
+                    <option value="test">Hanya Data Uji / Test Set (104)</option>
                     <option value="train">Hanya Data Latih / Train Set (493)</option>
                   </select>
                 </div>
