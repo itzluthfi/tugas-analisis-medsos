@@ -512,6 +512,18 @@ def export_sentiment_ground_truth(format: str = "xlsx", platform: str = "all"):
     media_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" if ext == "xlsx" else "text/csv"
     return FileResponse(fpath, filename=filename, media_type=media_type)
 
+@app.get("/api/sentiment/export/presentation")
+def export_sentiment_presentation():
+    """Mengunduh slide presentasi PowerPoint proyek dalam format .pptx."""
+    fpath = "Presentasi_Riset_Sentimen_BBM.pptx"
+    if not os.path.exists(fpath):
+        raise HTTPException(status_code=404, detail="File presentasi PowerPoint belum tersedia.")
+    return FileResponse(
+        fpath,
+        filename="Presentasi_Riset_Sentimen_BBM.pptx",
+        media_type="application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    )
+
 @app.get("/api/sentiment/export/evaluation")
 def export_sentiment_evaluation():
     """Mengunduh laporan komparasi 3 metode dalam format Excel."""
@@ -530,4 +542,16 @@ app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="frontend
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
+    import socket
+
+    def is_port_in_use(port: int) -> bool:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            return s.connect_ex(('127.0.0.1', port)) == 0
+
+    target_port = int(os.environ.get("PORT", 8000))
+    if target_port == 8000 and is_port_in_use(8000):
+        target_port = 8001
+        print(f"[!] Port 8000 sedang digunakan oleh aplikasi lain. Server dialihkan ke port {target_port}")
+
+    print(f"[+] Menjalankan server di http://127.0.0.1:{target_port}")
+    uvicorn.run("server:app", host="127.0.0.1", port=target_port, reload=True)
