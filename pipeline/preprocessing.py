@@ -34,7 +34,7 @@ class TextPreprocessor:
                 print(f"[Warning] Gagal membaca slang lexicon: {e}")
                 
     def _add_custom_slang_mappings(self):
-        """Tambahan mapping kata slang populer di percakapan ketenagakerjaan media sosial"""
+        """Tambahan mapping kata slang populer di percakapan krisis kelangkaan BBM di media sosial"""
         custom_maps = {
             "gak": "tidak", "ga": "tidak", "ngga": "tidak", "nggak": "tidak", "kaga": "tidak",
             "gk": "tidak", "ndak": "tidak", "tak": "tidak", "tdk": "tidak",

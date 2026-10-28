@@ -41,8 +41,6 @@ class SentimentResearchService:
 
     def _load_or_train(self):
         prep_csv = "data/dataset_bbm_preprocessed.csv"
-        if not os.path.exists(prep_csv):
-            prep_csv = "data/dataset_ketenagakerjaan_preprocessed.csv"
         eval_json = "data/evaluasi_komparasi_sentimen.json"
         
         if os.path.exists(prep_csv):

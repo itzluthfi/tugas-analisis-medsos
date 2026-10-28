@@ -30,9 +30,6 @@ def run_analysis_pipeline():
     
     # 1. Jalur Dataset BBM
     raw_path = "data/dataset_bbm_raw.csv"
-    if not os.path.exists(raw_path):
-        raw_path = "data/dataset_ketenagakerjaan_raw.csv"
-
     prep_csv_path = "data/dataset_bbm_preprocessed.csv"
     prep_xlsx_path = "data/dataset_bbm_preprocessed.xlsx"
 
@@ -256,13 +253,9 @@ def run_analysis_pipeline():
     df["pred_bilstm"] = df["pred_svm"]
     df["pred_xshot"] = xshot_classifier.predict(all_raws, all_texts)
 
-    # Simpan Dataset Preprocessed Lengkap (BBM & Fallback Ketenagakerjaan)
+    # Simpan Dataset Preprocessed Lengkap BBM
     df.to_csv(prep_csv_path, index=False, encoding="utf-8-sig")
     df.to_excel(prep_xlsx_path, index=False)
-    
-    # Sinkronkan juga ke dataset_ketenagakerjaan_preprocessed agar dashboard web langsung membaca data BBM
-    df.to_csv("data/dataset_ketenagakerjaan_preprocessed.csv", index=False, encoding="utf-8-sig")
-    df.to_excel("data/dataset_ketenagakerjaan_preprocessed.xlsx", index=False)
 
     print(f"\n[11] Dataset preprocessed lengkap berhasil disimpan:")
     print(f"     - {prep_csv_path}")

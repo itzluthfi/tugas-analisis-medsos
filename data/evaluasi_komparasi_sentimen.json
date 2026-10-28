@@ -53,11 +53,11 @@
     {
       "Paradigma": "X-Shot Learning",
       "Metode": "X-Shot Reasoning (CoT)",
-      "Akurasi": "24.39%",
-      "Precision (Macro)": "44.43%",
-      "Recall (Macro)": "38.20%",
-      "F1-Score (Macro)": "20.36%",
-      "F1-Score (Weighted)": "25.65%"
+      "Akurasi": "29.76%",
+      "Precision (Macro)": "40.78%",
+      "Recall (Macro)": "42.78%",
+      "F1-Score (Macro)": "23.41%",
+      "F1-Score (Weighted)": "32.29%"
     }
   ],
   "detailed_metrics": {
@@ -291,46 +291,46 @@
     },
     "xshot_reasoning": {
       "method": "X-Shot Reasoning (CoT)",
-      "accuracy": 0.2439,
+      "accuracy": 0.2976,
       "macro_avg": {
-        "precision": 0.4443,
-        "recall": 0.382,
-        "f1_score": 0.2036
+        "precision": 0.4078,
+        "recall": 0.4278,
+        "f1_score": 0.2341
       },
       "weighted_avg": {
-        "precision": 0.7447,
-        "recall": 0.2439,
-        "f1_score": 0.2565
+        "precision": 0.794,
+        "recall": 0.2976,
+        "f1_score": 0.3229
       },
       "per_class": {
         "Negatif": {
-          "precision": 0.871,
-          "recall": 0.1627,
-          "f1_score": 0.2741,
+          "precision": 0.9474,
+          "recall": 0.2169,
+          "f1_score": 0.3529,
           "support": 166
         },
         "Netral": {
-          "precision": 0.1287,
-          "recall": 0.9167,
-          "f1_score": 0.2256,
+          "precision": 0.1509,
+          "recall": 1.0,
+          "f1_score": 0.2623,
           "support": 24
         },
         "Positif": {
-          "precision": 0.3333,
+          "precision": 0.125,
           "recall": 0.0667,
-          "f1_score": 0.1111,
+          "f1_score": 0.087,
           "support": 15
         }
       },
       "confusion_matrix": [
         [
-          27,
-          137,
-          2
+          36,
+          123,
+          7
         ],
         [
-          2,
-          22,
+          0,
+          24,
           0
         ],
         [

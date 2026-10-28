@@ -98,7 +98,7 @@ class InSetLexiconClassifier:
             "menteri": 0.0,
             "bbm": 0.0,
             "pemerintah": 0.0,
-            # Ketenagakerjaan eksisting
+            # Kata sentimen sosio-ekonomi umum
             "phk": -4.0,
             "pemutusan hubungan kerja": -4.0,
             "pengangguran": -3.5,
